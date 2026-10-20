@@ -3,86 +3,49 @@ info:
   title: API Protheus 
   description: API Protheus Documentação
   version: 1.0.0
-  termsOfService: https://siriusdigital.com.br/termos-e-condicoes-de-uso/
+  termsOfService: https://coroa.com.br/politica-de-privacidade/
   contact:
-    name: Sirius Digital
-    url: https://siriusdigital.com.br/
-    email: contato@siriusdigital.com.br
+    name: Grupo Coroa
+    url: https://coroa.com.br/fale-conosco/
+    email: sac@coroa.com.br
   license:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
 servers:
-  - url: "https://macroex.hubhero.com.br/webhook/82130c21-3282-4f14-8267-c010b385f30e"
-    description: HubHero Macroex
-  # - url: 'https://api.example.com'
-  # description: Production server
+  - url: "http://189.50.2.244:8155/rest/"
+    description: Development server
+  - url: 'http://189.50.2.244:8370/rest/'
+    description: Production server
 tags:
+  - name: Produto
   - name: Fornecedor
   - name: Transportadora
-  - name: Cliente
   - name: GrupoDeProdutos
-  - name: Produtos
-  - name: TitulosAReceber
-  - name: TitulosAPagar
-  - name: ItemContabil
-  - name: PreNotaEntrada
-  - name: PedidoDeVenda
-  - name: VendaAssistida
-  - name: Estoque
-  - name: TabelaPreco
-  - name: RegraDesconto
+  # - name: Natureza
+  # - name: CentroDeCusto
+  # - name: CondicaoDePagamento
+  # - name: LocaisDeEstoque
+  # - name: PedidoDeCompra
+  # - name: SolicitacaoDeCompra
+  # - name: UnidadeDeMedida
+  # - name: ContaContabil
 
 security:
   - bearerAuth: []
 
 paths:
+  /api/v1/produto:
+    $ref: './paths/produto/noParameters.yaml'
+
   /api/v1/fornecedor:
     $ref: './paths/fornecedor/noParameters.yaml'
 
   /api/v1/transportadora:
     $ref: './paths/transportadora/noParameters.yaml'
 
-  /api/v1/cliente:
-    $ref: './paths/cliente/noParameters.yaml'
-
   /api/v1/grupoDeProdutos:
-   $ref: './paths/grupoDeProdutos/noParameters.yaml'
+    $ref: './paths/grupoDeProdutos/noParameters.yaml'
 
-  /api/v1/produto:
-     $ref: './paths/produto/noParameters.yaml'
-
-  /api/v1/titulosAReceber:
-    $ref: './paths/titulosAReceber/noParameters.yaml'
-  
-  /api/v1/titulosAReceber/baixa:
-    $ref: './paths/titulosAReceber/baixaDeTitulo.yaml'
-
-  /api/v1/titulosAPagar:
-    $ref: './paths/titulosAPagar/noParameters.yaml'
-
-  /api/v1/titulosAPagar/baixa:
-    $ref: './paths/titulosAPagar/baixaDeTitulo.yaml'
-
-  /api/v1/itemContabil:
-    $ref: './paths/itemContabil/noParameters.yaml'
-
-  /api/v1/preNotaEntrada:
-    $ref: './paths/preNotaEntrada/noParameters.yaml'
-
-  /api/v1/pedidoDeVenda:
-    $ref: './paths/pedidoDeVenda/noParameters.yaml'
-
-  /api/v1/vendaAssistida:
-    $ref: './paths/vendaAssistida/noParameters.yaml'
-
-  /api/v1/estoque:
-    $ref: './paths/estoque/noParameters.yaml'
-  
-  /api/v1/tabelaPreco:
-    $ref: './paths/tabelaPreco/noParameters.yaml'
-  
-  /api/v1/regraDesconto:
-    $ref: './paths/regraDesconto/noParameters.yaml'
   
 components:
   securitySchemes:
@@ -92,47 +55,17 @@ components:
       bearerFormat: JWT
 
   schemas:
+    Produto:
+      $ref: "./paths/produto/schemas/SB1+SB5.yaml"
+
     Fornecedor:
       $ref: "./paths/fornecedor/schemas/SA2.yaml"
 
     Transportadora:
       $ref: "./paths/transportadora/schemas/SA4.yaml"
 
-    Cliente:
-      $ref: "./paths/cliente/schemas/SA1.yaml"
-
     GrupoDeProdutos:
       $ref: "./paths/grupoDeProdutos/schemas/SBM.yaml"
-
-    Produtos:
-      $ref: "./paths/produto/schemas/SB1+SB5.yaml"
-
-    TitulosAReceber:
-      $ref: "./paths/titulosAReceber/schemas/SE1.yaml"
-
-    TitulosAPagar:
-      $ref: "./paths/titulosAPagar/schemas/SE2.yaml"
-
-    ItemContabil:
-      $ref: "./paths/itemContabil/schemas/CTD.yaml"
-
-    PreNotaEntrada:
-      $ref: "./paths/preNotaEntrada/schemas/SF1+SD1.yaml"
-      
-    PedidoDeVenda:
-      $ref: "./paths/pedidoDeVenda/schemas/SC5+SC6.yaml"
-    
-    VendaAssistida:
-      $ref: "./paths/vendaAssistida/schemas/SL1+SL2+SL4.yaml"
-    
-    Estoque:
-      $ref: "./paths/estoque/schemas/SB2+SB6.yaml"
-    
-    TabelaDePreco:
-      $ref: "./paths/tabelaPreco/schemas/DA0+DA1.yaml"
-    
-    RegraDeDesconto:
-      $ref: "./paths/regraDesconto/schemas/MEI+MB8.yaml"
 
   responses:
     UnauthorizedError:
