@@ -1,7 +1,7 @@
 get:
   tags:
     - GrupoDeProdutos
-  summary: EndPoint para retornar todos os grupo de produtos
+  summary: EndPoint para retornar os grupo de produtos
   operationId: getAllGrupoDeProdutos
   parameters:
     - name: "tenantId"
@@ -10,21 +10,33 @@ get:
       required: false
       schema:
         type: string
-        example: 01,0101
-    - name: "Authorization"
+        example: 01,01
+    - name: "pageNumber"
       in: query
-      description: Código em base64 de autorização (USUARIO:SENHA)
-      required: true
+      description: Número da página
+      required: false
       schema:
-        type: string
-        example: Basic XXXXXXX
-    - name: "ambiente_dev"
+        type: number
+        # example: "1"
+    - name: "pageSize"
       in: query
-      description: Direcionar para ambiente de desenvolvimento
+      description: Quantidade de itens por página
+      required: false
+      schema:
+        type: number
+        # example: "100"
+    - name: "updatedAt"
+      in: query
+      description: Filtro de atualização (yyyy-mm-dd)
       required: false
       schema:
         type: string
-        example: true
+    - name: "fieldsRet"
+      in: query
+      description: Filtro de campo (B1_FILIAL,B1_COD,B5_COD,...)
+      required: false
+      schema:
+        type: string
     - name: "codigo"
       in: query
       description: Número do código do grupo de produtos
@@ -43,19 +55,13 @@ get:
               success:
                 type: boolean
                 example: true
-              code:
-                type: integer
-                example: 200
-              environment:
-                type: string
-                example: Desenvolvimento
-              executionCode:
-                type: string
-                example: 99999
               data:
                 type: array
                 items:
                   $ref: "./schemas/SBM.yaml"
+              hasNext:
+                type: boolean
+                example: true
     "400":
       description: Invalid input
       content:
@@ -63,24 +69,12 @@ get:
           schema:
             type: object
             properties:
-              success:
-                type: boolean
-                example: false
-              code:
+              errorCode:
                 type: integer
                 example: 400
-              environment:
+              errorMessage:
                 type: string
-                example: Desenvolvimento
-              executionCode:
-                type: string
-                example: 99999
-              message:
-                type: object
-                properties:
-                  info:
-                    type: string
-                    example: Descrição do erro.
+                example: Descrição do erro.
     "404":
       description: Invalid input
       content:
@@ -88,24 +82,12 @@ get:
           schema:
             type: object
             properties:
-              success:
-                type: boolean
-                example: false
-              code:
+              errorCode:
                 type: integer
                 example: 404
-              environment:
+              errorMessage:
                 type: string
-                example: Desenvolvimento
-              executionCode:
-                type: string
-                example: 99999
-              message:
-                type: object
-                properties:
-                  info:
-                    type: string
-                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+                example: Nenhum registro encontrado.
     "500":
       description: Invalid input
       content:
@@ -113,20 +95,11 @@ get:
           schema:
             type: object
             properties:
-              success:
-                type: boolean
-                example: false
-              code:
+              errorCode:
                 type: integer
                 example: 500
-              executionCode:
+              errorMessage:
                 type: string
-                example: 99999
-              message:
-                type: object
-                properties:
-                  info:
-                    type: string
-                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+                example: Descrição do erro.
   security:
     - basicAuth: []

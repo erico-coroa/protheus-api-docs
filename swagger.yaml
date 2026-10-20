@@ -31,28 +31,27 @@ tags:
   # - name: ContaContabil
 
 security:
-  - bearerAuth: []
+  - basicAuth: []
 
 paths:
-  /api/v1/produto:
+  /coroaproduto/api/v1/produto:
     $ref: './paths/produto/noParameters.yaml'
 
-  /api/v1/fornecedor:
+  /coroafornecedor/api/v1/fornecedor:
     $ref: './paths/fornecedor/noParameters.yaml'
 
-  /api/v1/transportadora:
+  /transportadora/api/v1/transportadora:
     $ref: './paths/transportadora/noParameters.yaml'
 
-  /api/v1/grupoDeProdutos:
+  /coroagpprodutos/api/v1/grupoDeProdutos:
     $ref: './paths/grupoDeProdutos/noParameters.yaml'
 
   
 components:
   securitySchemes:
-    bearerAuth:
+    basicAuth:
       type: http
-      scheme: bearer
-      bearerFormat: JWT
+      scheme: basic
 
   schemas:
     Produto:
