@@ -21,31 +21,54 @@ tags:
   - name: Fornecedor
   - name: Transportadora
   - name: GrupoDeProdutos
-  # - name: Natureza
-  # - name: CentroDeCusto
-  # - name: CondicaoDePagamento
-  # - name: LocaisDeEstoque
+  - name: Natureza
+  - name: CentroDeCusto
+  - name: CondicaoDePagamento
+  - name: LocaisDeEstoque
+  - name: SolicitacaoDeCompra
+  - name: UnidadeDeMedida
+  - name: ContaContabil
   # - name: PedidoDeCompra
-  # - name: SolicitacaoDeCompra
-  # - name: UnidadeDeMedida
-  # - name: ContaContabil
 
 security:
   - basicAuth: []
 
 paths:
   /coroaproduto/api/v1/produto:
-    $ref: './paths/produto/noParameters.yaml'
+    $ref: './paths/produto/config.yaml'
 
   /coroafornecedor/api/v1/fornecedor:
-    $ref: './paths/fornecedor/noParameters.yaml'
+    $ref: './paths/fornecedor/config.yaml'
 
   /transportadora/api/v1/transportadora:
-    $ref: './paths/transportadora/noParameters.yaml'
+    $ref: './paths/transportadora/config.yaml'
 
   /coroagpprodutos/api/v1/grupoDeProdutos:
-    $ref: './paths/grupoDeProdutos/noParameters.yaml'
+    $ref: './paths/grupoDeProdutos/config.yaml'
 
+  /coroanatureza/api/v1/natureza:
+    $ref: './paths/natureza/config.yaml'
+  
+  /coroacentrodecusto/api/v1/centroDeCusto:
+    $ref: './paths/centroDeCusto/config.yaml'
+  
+  /coroacondicaopagamento/api/v1/condicaoDePagamento:
+    $ref: './paths/condicaoDePagamento/config.yaml'
+
+  /locaisdeestoque/api/v1/locaisDeEstoque:
+    $ref: './paths/locaisDeEstoque/config.yaml'
+
+  /solicitacaocompra/api/v1/solicitacaoDeCompra:
+    $ref: './paths/solicitacaoDeCompra/config.yaml'
+
+  /coroaunidademedida/api/v1/unidadeDeMedida:
+    $ref: './paths/unidadeDeMedida/config.yaml'
+
+  /coroacontacontabil/api/v1/contaContabil:
+    $ref: './paths/contaContabil/config.yaml'
+
+  # /pedidodecompra/api/v1/pedidoDeCompra:
+  #   $ref: './paths/pedidoDeCompra/config.yaml'
   
 components:
   securitySchemes:
@@ -65,24 +88,27 @@ components:
 
     GrupoDeProdutos:
       $ref: "./paths/grupoDeProdutos/schemas/SBM.yaml"
+   
+    Natureza:
+      $ref: "./paths/natureza/schemas/SED.yaml"
+    
+    CentroDeCusto:
+      $ref: "./paths/centroDeCusto/schemas/CTT.yaml"
+    
+    CondicaoDePagamento:
+      $ref: "./paths/condicaoDePagamento/schemas/SE4.yaml"
 
-  responses:
-    UnauthorizedError:
-      description: Authentication information is missing or invalid
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              error:
-                type: string
-                example: "Unauthorized"
-  parameters:
-    fornecedorId:
-      name: id
-      in: path
-      required: true
-      description: The ID of the user to retrieve
-      schema:
-        type: integer
-        example: 1
+    LocaisDeEstoque:
+      $ref: "./paths/locaisDeEstoque/schemas/NNR.yaml"
+
+    SolicitacaoDeCompra:
+      $ref: "./paths/solicitacaoDeCompra/schemas/SC1.yaml"
+
+    UnidadeDeMedida:
+      $ref: "./paths/unidadeDeMedida/schemas/SAH.yaml"
+
+    ContaContabil:
+      $ref: "./paths/contaContabil/schemas/CT1.yaml"
+
+    # PedidoDeCompra:
+    #   $ref: "./paths/pedidoDeCompra/schemas/SE4.yaml"

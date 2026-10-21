@@ -1,0 +1,196 @@
+type: object
+properties:
+  E4_HREXP:
+    type: string
+    length: 8
+    description: "Hora da Exportacao  "
+
+  E4_MSEXP:
+    type: string
+    length: 8
+    description: "Ident.Exp.Dados  "
+
+  E4_ACRES:
+    type: string
+    length: 1
+    description: "Acrescimo Financeiro     "
+    options: "N=Normal;J=Junta;S=Separa;V=NC a Vista "
+
+  E4_ACRSFIN:
+    type: number
+    length: 6
+    decimal: 2
+    description: "% Acrescimo Financeiro   "
+
+  E4_AGRACRS:
+    type: string
+    length: 1
+    description: "Agrega Acréscimo  "
+    options: "1=SIM;2=NÃO         "
+
+  E4_ATVWF:
+    type: string
+    length: 1
+    description: "Adicionar cond.Pgto ao WF"
+    options: "0=Não;1=Sim           "
+
+  E4_CCORREN:
+    type: string
+    length: 1
+    description: "Conta COrrente  "
+    options: "1=Sim;2=Nao       "
+
+  E4_CODIGO:
+    type: string
+    length: 3
+    description: "Codigo da Condicao  "
+
+  E4_COND:
+    type: string
+    length: 40
+    description: "Condicao de pagto    "
+
+  E4_CTRADT:
+    type: string
+    length: 1
+    description: "Permite Adiantamento?  "
+    options: "1=Sim;2=Não   "
+
+  E4_DDD:
+    type: string
+    length: 1
+    description: "Dias"
+    options: "D=Data do Dia;L=Fora o Dia;S=Fora Semana;Q=Fora quinzena;F=Fora Mes;Z=Fora Dezena "
+
+  E4_DESCFIN:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Desconto Financeiro  "
+
+  E4_DESCRI:
+    type: string
+    length: 15
+    description: "Descricao da Cond. Pagto "
+
+  E4_DIADESC:
+    type: number
+    length: 2
+    description: "Dias p/Desc. Financeiro  "
+
+  E4_FATOR:
+    type: number
+    length: 12
+    decimal: 8
+    description: "Fator para Multpl. de Par"
+
+  E4_FILIAL:
+    type: string
+    length: 2
+    description: "Filial do Sistema   "
+
+  E4_FORMA:
+    type: string
+    length: 6
+    description: "Forma de Pagamento   "
+
+  E4_GRRNF:
+    type: string
+    length: 1
+    description: "GRR - Tp Geração de NF   "
+    options: "1=Emite NF após pagamento (B2C);2=Emite NF no vencimento (B2B)   "
+
+  E4_INFER:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Limite de Venda Inferior "
+
+  E4_IPI:
+    type: string
+    length: 1
+    description: "IPI(Normal/Junta/Separa) "
+    options: "N=Normal;J=Junta;S=Separa    "
+
+  E4_JURCART:
+    type: string
+    length: 1
+    description: "Juros do Cartao por conta"
+    options: "1=Administradora;2=Empresa;3=ProRata"
+
+  E4_LIMACRS:
+    type: number
+    length: 3
+    description: "Limite dias Pagamento "
+
+  E4_MSBLQL:
+    type: string
+    length: 1
+    description: "Status do registro   "
+    options: "1=Inativo;2=Ativo       "
+
+  E4_PAGGRR:
+    type: boolean
+    length: 1
+    description: "Pagamento Recorrente GRR "
+
+  E4_PERCOM:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Percentual de Comissão  "
+
+  E4_PLANO:
+    type: string
+    length: 3
+    description: "Plano Infocard  "
+
+  E4_SOLID:
+    type: string
+    length: 1
+    description: "ICM Solidario(N/J/S)   "
+    options: "N=Normal;J=Junta;S=Separa  "
+
+  E4_TIPO:
+    type: string
+    length: 1
+    description: "Tipo da condicao de pagto"
+
+  E4_SUPER:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Limite de Venda Superior "
+
+  E4_YNATURE:
+    type: string
+    length: 10
+    description: "Natureza para gera CR "
+
+  E4_YENVIAP:
+    type: string
+    length: 1
+    description: "Envia Palm"
+    options: "S=Sim;N=Nao   "
+
+  E4_YPRZMED:
+    type: number
+    length: 3
+    description: "Prazo Medio cond. Cliente"
+
+  E4_TPAY:
+    type: boolean
+    length: 1
+    description: "TOTVS Mais Negócio "
+
+  E4_USERLGI:
+    type: string
+    length: 17
+    description: "Log de Inclusao  "
+
+  E4_USERLGA:
+    type: string
+    length: 17
+    description: "Log de Alteracao  "
+
+required: []

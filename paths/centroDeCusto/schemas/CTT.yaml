@@ -1,0 +1,514 @@
+type: object
+properties:
+  CTT_NRINPR:
+    type: string
+    length: 14
+    description: "Nr Inscrição Proprietário"
+
+  CTT_PEREMP:
+    type: number
+    length: 8
+    decimal: 4
+    description: "Percentual Empresa"
+
+  CTT_PERRAT:
+    type: number
+    length: 6
+    decimal: 4
+    description: "% Riscos Amb. Trabalho"
+
+  CTT_RECFAT:
+    type: string
+    length: 1
+    description: "Recolhe s/ faturamento"
+    options: "1=Sim;2=Não "
+  CTT_NRINCT:
+    type: string
+    length: 14
+    description: "Nr Inscrição Contratante"
+
+  CTT_LOGRTP:
+    type: string
+    length: 3
+    description: "Tipo Logradouro"
+
+  CTT_TIPO2:
+    type: string
+    length: 1
+    description: "Tipo Tomador eSocial "
+    options: "1=CNPJ;2=CPF;3=CAEPF;4=CNO  "
+  CTT_TPINCT:
+    type: string
+    length: 1
+    description: "Tp Inscrição Contratante "
+    options: "1=CNPJ;2=CPF        "
+  CTT_TPINPR:
+    type: string
+    length: 1
+    description: "Tp Inscrição Proprietario"
+    options: "1=CNPJ;2=CPF     "
+  CTT_LOGRTD:
+    type: string
+    length: 10
+    description: "Descrição Tp Logradouro"
+
+  CTT_LOGRNR:
+    type: string
+    length: 10
+    description: "Número Logradouro"
+
+  CTT_LOGRDS:
+    type: string
+    length: 80
+    description: "Descrição Logradouro"
+
+  CTT_ICTPAT:
+    type: string
+    length: 1
+    description: "Indice Contr. Patronal   "
+    options: "1=Contribuição Patronal Substituída;2=Contribuição Patronal não Substituída     "
+  CTT_FPAS:
+    type: string
+    length: 3
+    description: "Código FPAS"
+
+  CTT_FAP:
+    type: number
+    length: 6
+    decimal: 4
+    description: "Fator acid. de prevenção"
+
+  CTT_DTPLO:
+    type: string
+    length: 100
+    description: "Descrição Tipo Lotação"
+
+  CTT_DCODMU:
+    type: string
+    length: 80
+    description: "Nom Munic Tomador eSocial"
+
+  CTT_COMPL:
+    type: string
+    length: 30
+    description: "Complemento Logradouro"
+
+  CTT_CODTER:
+    type: string
+    length: 4
+    description: "Cód. Terceiro FPAS"
+
+  CTT_CNAE:
+    type: string
+    length: 9
+    description: "Código CNAE do Funcionari"
+
+  CTT_CEI2:
+    type: string
+    length: 14
+    description: "Inscr. Tomador eSocial"
+
+  CTT_ATOBRG:
+    type: string
+    length: 1
+    description: "Outra ativ. obrigatoria? "
+    options: "1=Sim;2=Não  "
+  CTT_AT04OB:
+    type: string
+    length: 1
+    description: "Obrigatório Ativ.04   "
+    options: "1=Sim;2=Não "
+  CTT_AT03OB:
+    type: string
+    length: 1
+    description: "Obrigatório Ativ.03    "
+    options: "1=Sim;2=Não         "
+  CTT_AT02OB:
+    type: string
+    length: 1
+    description: "Obrigatório Ativ.02    "
+    options: "1=Sim;2=Não         "
+  CTT_AT01OB:
+    type: string
+    length: 1
+    description: "Obrigatório Ativ.01  "
+    options: "1=Sim;2=Não             "
+  CTT_ACATIV:
+    type: string
+    length: 1
+    description: "Aceita Outra Atividade?  "
+    options: "1=Sim;2=Não     "
+  CTT_CLASSE:
+    type: string
+    length: 1
+    description: "Classe  "
+    options: "1=Sintetico;2=Analitico    "
+  CTT_ACAT04:
+    type: string
+    length: 1
+    description: "Aceita Atividade 04     "
+    options: "1=Sim;2=Não       "
+  CTT_ACAT03:
+    type: string
+    length: 1
+    description: "Aceita Atividade 03  "
+    options: "1=Sim;2=Não            "
+  CTT_ACAT02:
+    type: string
+    length: 1
+    description: "Aceita Atividade 02  "
+    options: "1=Sim;2=Não          "
+  CTT_ACAT01:
+    type: string
+    length: 1
+    description: "Aceita Atividade 01  "
+    options: "1=Sim;2=Não            "
+  CTT_TIPO00:
+    type: string
+    length: 2
+    description: "Tipo de Terceiro         "
+    options: "01=Cliente;02=Fornecedor;03=Funcionarios    "
+  CTT_CUSTO:
+    type: string
+    length: 20
+    description: "Centro de Custo"
+
+  CTT_TIPO01:
+    type: string
+    length: 2
+    description: "Tipo Documento Terceiros "
+    options: "01=RG;02=CPF/CNPJ;03=PASSAPORTE;04=CED. ESTRANGEIRO    "
+  CTT_TPO01:
+    type: string
+    length: 2
+    description: "Tipo Ctb 01"
+
+  CTT_TPLOT:
+    type: string
+    length: 2
+    description: "Tipo Lotação"
+
+  CTT_TPO02:
+    type: string
+    length: 2
+    description: "Tipo Ctb 02"
+
+  CTT_TPO03:
+    type: string
+    length: 2
+    description: "Tipo Ctb 03"
+
+  CTT_TPO04:
+    type: string
+    length: 2
+    description: "Tipo Ctb 04"
+
+  CTT_DESC01:
+    type: string
+    length: 40
+    description: "Descricao Moeda 1"
+
+  CTT_FILIAL:
+    type: string
+    length: 2
+    description: "Filial do Sistema"
+
+  CTT_NORMAL:
+    type: string
+    length: 1
+    description: "Condicao Normal          "
+    options: "0=Nenhum;1=Despesa;2=Receita   "
+  CTT_YTIPO:
+    type: string
+    length: 1
+    description: "Tipo de Centro de Custo  "
+    options: "1=Administrativo; 2=Comercial; 3=Industrial   "
+  CTT_DTBLIN:
+    type: string
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Inicio Bloqueio"
+
+  CTT_DESC05:
+    type: string
+    length: 40
+    description: "Descricao Moeda 5"
+
+  CTT_DESCRI:
+    type: string
+    length: 100
+    description: "Nome do escritório"
+
+  CTT_ACITEM:
+    type: string
+    length: 1
+    description: "Aceita Item Contabil   "
+    options: "1=Sim;2=Näo                "
+  CTT_RES:
+    type: string
+    length: 10
+    description: "Codigo Red. C.Custo"
+
+  CTT_BAIRRO:
+    type: string
+    length: 20
+    description: "Bairro do Tomador Servico"
+
+  CTT_BLOQ:
+    type: string
+    length: 1
+    description: "C.C. Bloqueado?      "
+    options: "1=Bloqueado;2=Nao Bloqueado "
+  CTT_BOOK:
+    type: string
+    length: 20
+    description: "Configuracao de Livros"
+
+  CTT_CCLP:
+    type: string
+    length: 20
+    description: "C. Custo Lucros/Perdas"
+
+  CTT_CCPON:
+    type: string
+    length: 20
+    description: "C. Custo Ponte L/P"
+
+  CTT_CCRED:
+    type: string
+    length: 20
+    description: "C.Custo Redutor Var.Monet"
+
+  CTT_CCSUP:
+    type: string
+    length: 20
+    description: "C.C. Superior"
+
+  CTT_CEI:
+    type: string
+    length: 14
+    description: "CNPJ/CEI Tomador"
+
+  CTT_CEP:
+    type: string
+    length: 8
+    description: "Cep do Tomador Servico"
+
+  CTT_ESTADO:
+    type: string
+    length: 2
+    description: "Estado"
+
+  CTT_MUNIC:
+    type: string
+    length: 20
+    description: "Municipio do Tomador"
+
+  CTT_TIPO:
+    type: string
+    length: 1
+    description: "Tipo Inscricao Tomador "
+    options: "1=CNPJ;2=CEI        "
+  CTT_CESCRI:
+    type: string
+    length: 5
+    description: "Código do escritório"
+
+  CTT_CLOBRG:
+    type: string
+    length: 1
+    description: "Classe de Vlr Obrigatoria"
+    options: "1=Sim;2=Nao                 "
+  CTT_CODMUN:
+    type: string
+    length: 7
+    description: "Codigo do Municipio"
+
+  CTT_ITOBRG:
+    type: string
+    length: 1
+    description: "Item Contab. Obrigatorio "
+    options: "1=Sim;2=Nao          "
+  CTT_OCORRE:
+    type: string
+    length: 2
+    description: "Ocorrencia de Ag. Nocivo"
+
+  CTT_OPERAC:
+    type: string
+    length: 3
+    description: "Operacao realizadao"
+
+  CTT_RHEXP:
+    type: string
+    length: 6
+    description: "Controle de Exportacao RH"
+
+  CTT_CPART:
+    type: string
+    length: 6
+    description: "Código do responsável"
+
+  CTT_CRGNV1:
+    type: string
+    length: 12
+    description: "Contra Regra Nivel 1"
+
+  CTT_EMAIL:
+    type: string
+    length: 60
+    description: "E-mail do responsável"
+
+  CTT_SIGLA:
+    type: string
+    length: 5
+    description: "Sigla do responsável"
+
+  CTT_CSINCO:
+    type: string
+    length: 1
+    description: "Classificacao Sinco"
+
+  CTT_DTBLFI:
+    type: string
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Fim Bloqueio"
+
+  CTT_DESC02:
+    type: string
+    length: 40
+    description: "Descricao Moeda 2"
+
+  CTT_DESC04:
+    type: string
+    length: 40
+    description: "Descricao Moeda 4"
+
+  CTT_DESC03:
+    type: string
+    length: 40
+    description: "Descricao Moeda 3"
+
+  CTT_DTEXIS:
+    type: string
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Inicio Existencia"
+
+  CTT_DTEXSF:
+    type: string
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Final de Existencia"
+
+  CTT_DPART:
+    type: string
+    length: 50
+    description: "Nome do responsável"
+
+  CTT_ACCLVL:
+    type: string
+    length: 1
+    description: "Aceita Classe de Valor  "
+    options: "1=Sim;2=Nao           "
+  CTT_RGNV2:
+    type: string
+    length: 12
+    description: "Regra Nivel 2"
+
+  CTT_STATUS:
+    type: string
+    length: 1
+    description: "Status"
+
+  CTT_FILMAT:
+    type: string
+    length: 2
+    description: "Cod.Filial Resp. C.Custo"
+
+  CTT_MAT:
+    type: string
+    length: 6
+    description: "Cod. Responsavel C.Custo"
+
+  CTT_PERCAC:
+    type: number
+    length: 8
+    decimal: 4
+    description: "Percentual Acid. Trabalho"
+
+  CTT_PERFPA:
+    type: number
+    length: 7
+    decimal: 3
+    description: "Percentual de Terceiros"
+
+  CTT_RGNV3:
+    type: string
+    length: 12
+    description: "Regra Nivel 3"
+
+  CTT_NOME:
+    type: string
+    length: 40
+    description: "Nome do Tomador Servico"
+
+  CTT_CCVM:
+    type: string
+    length: 20
+    description: "CCusto Variacao Monetaria"
+
+  CTT_ENDER:
+    type: string
+    length: 40
+    description: "Endereco Tomador Servico"
+
+  CTT_VALFAT:
+    type: number
+    length: 12
+    decimal: 2
+    description: "Valor da fatura Tomador"
+
+  CTT_RETIDO:
+    type: number
+    length: 12
+    decimal: 2
+    description: "Valor Inss Retido Tomador"
+
+  CTT_LOCAL:
+    type: string
+    length: 2
+    description: "Almoxarifado Manutencao"
+
+  CTT_RESERV:
+    type: string
+    length: 1
+    description: "Sincronização com Reserve"
+    options: "1=Pendente inclusão;2=Pendente alteração;3=Pendente exclusão;4=Sincronizado  "
+  CTT_INTRES:
+    type: string
+    length: 1
+    description: "Integra ao Reserve   "
+    options: "1=Sim;2=Não     "
+  CTT_YLELGI:
+    type: string
+    length: 50
+    description: "Quem Incluiu"
+
+  CTT_YLELGA:
+    type: string
+    length: 50
+    description: "Quem Alterou"
+
+  CTT_USERGI:
+    type: string
+    length: 17
+    description: "Log de Inclusao"
+
+  CTT_USERGA:
+    type: string
+    length: 17
+    description: "Log de Alteracao"
+
+required: []

@@ -1,30 +1,9 @@
 get:
   tags:
-    - Produto
-  summary: EndPoint para retornar os produtos
-  operationId: getAllProdutos
+    - CondicaoDePagamento
+  summary: EndPoint para retornar as condições de pagamento
+  operationId: getCondicaoDePagamento
   parameters:
-    # - name: "Authorization"
-    #   in: query
-    #   description: Código em base64 de autorização (USUARIO:SENHA)
-    #   required: true
-    #   schema:
-    #     type: string
-    #     example: Basic XXXXXXX
-    # - name: "ambiente_dev"
-    #   in: query
-    #   description: Direcionar para ambiente de desenvolvimento
-    #   required: false
-    #   schema:
-    #     type: string
-    #     example: true
-    # - name: "ecommerce"
-    #   in: query
-    #   description: Filtrar apenas por produtos ecommerce, com campo B5_ECFLAG = 1
-    #   required: false
-    #   schema:
-    #     type: string
-    #     example: "true"
     - name: "tenantId"
       in: header
       description: TenantId (EMPRESA,FILIAL)
@@ -38,14 +17,12 @@ get:
       required: false
       schema:
         type: number
-        # example: "1"
     - name: "pageSize"
       in: query
       description: Quantidade de itens por página
       required: false
       schema:
         type: number
-        # example: "100"
     - name: "updatedAt"
       in: query
       description: Filtro de atualização (yyyy-mm-dd)
@@ -60,18 +37,11 @@ get:
         type: string
     - name: "codigo"
       in: query
-      description: Número do código do produto
+      description: Número do código da condição de pagamento
       required: false
       schema:
         type: string
-        # example: "000001"
-    - name: "tipo"
-      in: query
-      description: Tipo do produto
-      required: false
-      schema:
-        type: string
-        # example: "000001"
+
   responses:
     "200":
       description: Successful response
@@ -86,10 +56,21 @@ get:
               data:
                 type: array
                 items:
-                  $ref: "./schemas/SB1+SB5.yaml"
+                  $ref: "./schemas/SE4.yaml"
               hasNext:
+                description: Indica se existem mais registros disponíveis na próxima página.
                 type: boolean
                 example: true
+              parameters:
+                type: object
+                description: Define os parâmetros utilizados para consultar registros com base nas datas de atualização.
+                properties:
+                  update_parameter:
+                    type: string
+                    example: DD/MM/YYYY
+                  last_registry_change_se4:
+                    type: string
+                    example: DD/MM/YYYY
     "400":
       description: Invalid input
       content:

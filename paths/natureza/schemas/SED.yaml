@@ -1,0 +1,720 @@
+type: object
+properties:
+  ED_ALUGUEL:
+    type: string
+    length: 1
+    description: "Considera Multa/Juros?"
+    example: "option"
+    options: "1=Sim;2=Nao"
+
+  ED_APURCOF:
+    type: string
+    length: 1
+    description: "Apuração COFINS"
+    example: "option"
+    options: "C=Credito;D=Debito"
+
+  ED_APURPIS:
+    type: string
+    length: 1
+    description: "Apuração PIS"
+    example: "option"
+    options: "C=Credito;D=Debito"
+
+  ED_CALCFMP:
+    type: string
+    length: 1
+    description: "Calcula Fumipeq ?"
+    example: "option"
+    options: "1=Sim;2=Nao"
+
+  ED_CDDEDA:
+    type: string
+    length: 8
+    description: "Cod. Ded. Analitico"
+
+  ED_CDRECA:
+    type: string
+    length: 8
+    description: "Cod. Rec. Analitico"
+
+  ED_CODRET:
+    type: string
+    length: 4
+    description: "Codigo de Retencao"
+
+  ED_F100:
+    type: string
+    length: 1
+    description: "Gera arquivo F100"
+    example: "option"
+    options: "1=Sim;2=Nao"
+
+  ED_HREXP:
+    type: string
+    length: 8
+    description: "Hora da Exportacao"
+
+  ED_JURSPD:
+    type: string
+    length: 1
+    description: "Considera multa, juros, c"
+    example: "option"
+    options: "1=Sim;2=Nao"
+
+  ED_NATDC:
+    type: string
+    length: 10
+    description: "Nat. Desc."
+
+  ED_NATJR:
+    type: string
+    length: 10
+    description: "Nat. Juros"
+
+  ED_NATMT:
+    type: string
+    length: 10
+    description: "Nat. Multa"
+
+  ED_PCAPCOF:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Porc. de apuração COFINS"
+
+  ED_PCCINDV:
+    type: string
+    length: 1
+    description: "PCC Individual"
+    example: "option"
+    options: "1=Sim;2=Não"
+
+  ED_PERQFMP:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Aliquota Fumipeq"
+
+  ED_RECDAC:
+    type: string
+    length: 1
+    description: "Tipo de Receitas     "
+    example: "option"
+    options: "1=Mercado Interno Tributada;2=Mercado Interno Nao Tributada;3=Exportacao"
+
+  ED_RECFUN:
+    type: string
+    length: 1
+    description: "Cliente recolhe Funrural"
+    example: "option"
+    options: "1=Sim;2=Nao"
+
+  ED_RECIRRF:
+    type: string
+    length: 1
+    description: "Cliente recolhera IRRF"
+    example: "option"
+    options: "1=Sim;2=Nao;3=Cad.Cliente"
+
+  ED_TPREG:
+    type: string
+    length: 1
+    description: "Tipo de Regime       "
+    example: "option"
+    options: "1=Nao Cumulativo;2=Cumulativo"
+
+  ED_BANCJUR:
+    type: string
+    length: 1
+    description: "Banco?               "
+    example: "option"
+    options: "1=Sim;2=Não"
+
+  ED_BASECID:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Base Cide"
+
+  ED_BASECOF:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Base COFINS"
+
+  ED_BASEINS:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Base INSS"
+
+  ED_BASEIRC:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Base IRRF Carreteiro"
+
+  ED_BASEIRF:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Base IRRF"
+
+  ED_BASEPIS:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Base PIS"
+
+  ED_FILIAL:
+    type: string
+    length: 2
+    description: "Filial do Sistema"
+
+  ED_CODIGO:
+    type: string
+    length: 10
+    description: "Codigo da Natureza"
+
+  ED_DESCRIC:
+    type: string
+    length: 30
+    description: "Descricao da natureza"
+
+  ED_CALCIRF:
+    type: string
+    length: 1
+    description: "Calcula IRRF (S/N) ? "
+    example: "option"
+    options: "S=Sim;N=Nao"
+
+  ED_CALCISS:
+    type: string
+    length: 1
+    description: "Calcula ISS (S/N) ?  "
+    example: "option"
+    options: "S=Sim;N=Nao"
+
+  ED_CALCINS:
+    type: string
+    length: 1
+    description: "Calcula INSS (S/N) ? "
+    example: "option"
+    options: "S=Sim;N=Nao"
+
+  ED_CALCCSL:
+    type: string
+    length: 1
+    description: "Calcula CSLL (S/N) ? "
+    example: "option"
+    options: "S=Sim;N=Nao"
+
+  ED_CALCCOF:
+    type: string
+    length: 1
+    description: "Calcula COFINS (S/N) ?"
+    example: "option"
+    options: "S=Sim;N=Nao"
+
+  ED_CALCPIS:
+    type: string
+    length: 1
+    description: "Calcula PIS (S/N) ?  "
+    example: "option"
+    options: "S=Sim;N=Nao"
+
+  ED_CONTA:
+    type: string
+    length: 20
+    description: "Conta Contabil"
+
+  ED_DEDPIS:
+    type: string
+    length: 1
+    description: "Dedução PIS          "
+    example: "option"
+    options: "1=Sim;2=Nao"
+
+  ED_DEDCOF:
+    type: string
+    length: 1
+    description: "Deducäo do COFINS    "
+    example: "option"
+    options: "1=Sim;2=Näo"
+
+  ED_CALCSES:
+    type: string
+    length: 1
+    description: "Calcula SEST         "
+    example: "option"
+    options: "S=Sim;N=Nao "
+
+  ED_BASESES:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Base Calc.SEST "
+
+  ED_IRRFCAR:
+    type: string
+    length: 1
+    description: "IRRF de Carreteiro   "
+    example: "option"
+    options: "S=Sim;N=Nao  "
+
+  ED_INSSCAR:
+    type: string
+    length: 1
+    description: "INSS Carreteiro      "
+    example: "option"
+    options: "S=Sim;N=Não"
+
+  ED_DEBITO:
+    type: string
+    length: 20
+    description: "Conta Debito"
+
+  ED_CCD:
+    type: string
+    length: 20
+    description: "Centro de Custo Debito"
+
+  ED_CLVLDB:
+    type: string
+    length: 20
+    description: "Classe Valor Debito"
+
+  ED_CREDIT:
+    type: string
+    length: 20
+    description: "Conta Credito"
+
+  ED_CCC:
+    type: string
+    length: 20
+    description: "Centro de Custo Credito"
+
+  ED_CLVLCR:
+    type: string
+    length: 20
+    description: "Classe Valor Credito"
+
+  ED_DEDINSS:
+    type: string
+    length: 1
+    description: "Deduz INSS Principal "
+    example: "option"
+    options: "1=Sim;2=Nao     "
+
+  ED_CALCFET:
+    type: string
+    length: 1
+    description: "Calcula o Imposto FETHAB?"
+    example: "option"
+    options: "1=Sim;2=Nao    "
+
+  ED_CALCCID:
+    type: string
+    length: 1
+    description: "Calc Cide            "
+    example: "option"
+    options: "S=Sim; N=Nao  "
+
+  ED_CODMASC:
+    type: string
+    length: 19
+    description: "Mascara  "
+
+  ED_GRPNAT:
+    type: string
+    length: 3
+    description: "Grp.Natur.           "
+    example: "option"
+    options: "1=Despesa Cliente;2=Escritorio;3=Escritorio+Centro de Custo;4=Profissional;5=Tabela Rateio;6=Rateio Juridico;7=A Classificar"
+
+  ED_COND:
+    type: string
+    length: 1
+    description: "Cond Naturez         "
+    example: "option"
+    options: "R=Receita;D=Despesa"
+
+  ED_CODCCZ:
+    type: string
+    length: 3
+    description: "Codigo Nat. da Receita"
+
+  ED_GRUCCZ:
+    type: string
+    length: 2
+    description: "Grupo  "
+
+  ED_CSTPIS:
+    type: string
+    length: 2
+    description: "Cod. Sit. Trib. PIS"
+
+  ED_CLASFIS:
+    type: string
+    length: 2
+    description: "Operações Financeiras"
+
+  ED_INDCMLT:
+    type: string
+    length: 1
+    description: "Ind. Cumulatividade  "
+    example: "option"
+    options: "1=Cumulativa;2=Não Cumulat.   "
+
+  ED_INDRET:
+    type: string
+    length: 2
+    description: "Indicador de Retenção"
+
+  ED_CSTCOF:
+    type: string
+    length: 2
+    description: "Cod. Sit.Trib. COFINS"
+
+  ED_DTINCLU:
+    type: string
+    example: "yyyymmdd"
+    length: 8
+    description: "Data de Incl. da Natureza"
+
+  ED_DTFCCZ:
+    type: string
+    example: "yyyymmdd"
+    length: 8
+    description: "Dt Final da Escrituracao"
+
+  ED_CDRECSL:
+    type: string
+    length: 15
+    description: "Cod.Rec.CSLL  "
+
+  ED_ESCRIT:
+    type: string
+    length: 1
+    description: "Escritorio           "
+    example: "option"
+    options: "1=Sim;2=Nao        "
+
+  ED_GRPJUR:
+    type: string
+    length: 1
+    description: "Grupo Juridico       "
+    example: "option"
+    options: "1=Sim;2=Não "
+
+  ED_IDHIST:
+    type: string
+    length: 20
+    description: "ID Hist."
+
+  ED_CMOEJUR:
+    type: string
+    length: 2
+    description: "Código Moeda "
+
+  ED_DMOEJUR:
+    type: string
+    length: 10
+    description: "Símbolo Moeda  "
+
+  ED_CFJUR:
+    type: string
+    length: 1
+    description: "Cashflow?            "
+    example: "option"
+    options: "1=Sim;2=Não      "
+
+  ED_CPJUR:
+    type: string
+    length: 1
+    description: "Contas a Pagar?      "
+    example: "option"
+    options: "1=Sim;2=Não      "
+
+  ED_CRJUR:
+    type: string
+    length: 1
+    description: "Contas a Receber?    "
+    example: "option"
+    options: "1=Sim;2=Não     "
+
+  ED_CBANCO:
+    type: string
+    length: 3
+    description: "Código do Banco "
+
+  ED_CAGENC:
+    type: string
+    length: 5
+    description: "Código Agência Bancária"
+
+  ED_CCONTA:
+    type: string
+    length: 10
+    description: "Código Conta Bancária"
+
+  ED_DBANCO:
+    type: string
+    length: 40
+    description: "Nome do Banco    "
+
+  ED_CCJURI:
+    type: string
+    length: 1
+    description: "Centro de Custo Jurídico"
+    example: "option"
+    options: "#JurListCc()     "
+
+  ED_CALCINP:
+    type: string
+    length: 1
+    description: "Calcula INSS Patronal?"
+    example: "option"
+    options: "1=Sim;2=Não      "
+
+  ED_CPRB:
+    type: string
+    length: 1
+    description: "Compõe base para a CPRB"
+    example: "option"
+    options: "1=Sim;2=Nao  "
+
+  ED_DESFAT:
+    type: string
+    length: 1
+    description: "Gera despesa faturamento"
+    example: "option"
+    options: "1=Sim;2=Não    "
+
+  ED_PERCIRF:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Porcentual IRRF    "
+
+  ED_PERCINS:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Porcentual INSS  "
+
+  ED_PERCCSL:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Porcentual CSLL "
+
+  ED_PERCCOF:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Porcentual COFINS"
+
+  ED_PERCPIS:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Porcentual PIS "
+
+  ED_PERCSES:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Porcentagem SEST"
+
+  ED_ITEMD:
+    type: string
+    length: 20
+    description: "Item Contabil Debito"
+
+  ED_ITEMC:
+    type: string
+    length: 20
+    description: "Item Contabil Credito"
+
+  ED_YNATANT:
+    type: string
+    length: 10
+    description: "Codigo Natureza Anterior"
+
+  ED_PAI:
+    type: string
+    length: 10
+    description: "Codigo da Natureza Pai"
+
+  ED_USO:
+    type: string
+    length: 1
+    description: "Uso Natureza         "
+    example: "option"
+    options: "0=Livre; 1=Contas a receber; 2=Contas a pagar; 3=Mov. Bancario "
+
+  ED_TIPO:
+    type: string
+    length: 1
+    description: "Tipo da Natureza     "
+    example: "option"
+    options: "1=Sintetico; 2=Analitico "
+
+  ED_USAMASC:
+    type: string
+    length: 1
+    description: "Natureza usa máscara?"
+    example: "option"
+    options: "1=Sim;1=Não       "
+
+  ED_PERCCID:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Porcen Cide "
+
+  ED_PCAPPIS:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Porc. de apuração PIS"
+
+  ED_RATOBR:
+    type: string
+    length: 1
+    description: "Rat.Juri.Obr         "
+    example: "option"
+    options: "1=Sim;2=Nao     "
+
+  ED_MSBLQL:
+    type: string
+    length: 1
+    description: "Registro Bloqueado   "
+    example: "option"
+    options: "1=Sim;2=Nao        "
+
+  ED_REDPIS:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Red. Apur. PIS    "
+
+  ED_REDCOF:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Red. Apur. COF     "
+
+  ED_TABCCZ:
+    type: string
+    length: 4
+    description: "Tabela Nat. Receita  "
+
+  ED_MOVBCO:
+    type: string
+    length: 1
+    description: "Permite movimentacao bco"
+    example: "option"
+    options: "1=Sim; 2=Nao     "
+
+  ED_MSEXP:
+    type: string
+    length: 8
+    description: "Ident.Export.Dados   "
+
+  ED_JURCAP:
+    type: string
+    length: 1
+    description: "Juros capital        "
+    example: "option"
+    options: "1=Sim;2=Nao       "
+
+  ED_RINSSPA:
+    type: string
+    length: 1
+    description: "Retem INSS PA        "
+    example: "option"
+    options: "1=Sim;2=Nao   "
+
+  ED_PERCIOF:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Percentual de IOF"
+
+  ED_YCTADES:
+    type: string
+    length: 20
+    description: "Cta.Contabil Despesa"
+
+  ED_YCTACUS:
+    type: string
+    length: 20
+    description: "Cta.Contabil Custo "
+
+  ED_PERAPOS:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Porcentual Aposent. Espec"
+
+  ED_TPAPOS:
+    type: string
+    length: 1
+    description: "TIPO APOSENTADORIA   "
+    example: "option"
+    options: "1=Normal;2=15 anos; 3=20 anos ;4=25 anos"
+
+  ED_TPCOJR:
+    type: string
+    length: 1
+    description: "Tipo de Conta        "
+    example: "option"
+    options: "#JurListCon()     "
+
+  ED_RATJUR:
+    type: string
+    length: 10
+    description: "Código Tabela de Rateio"
+
+  ED_PERCINP:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Percent. do INSS Patronal"
+
+  ED_LCDPR:
+    type: string
+    length: 1
+    description: "Liv. Cxa Dig. Prod. Rural"
+    example: "option"
+    options: "1=Sim;2=Não;3=Apenas variação cambial"
+
+  ED_JURDVER:
+    type: string
+    length: 20
+    description: "Descrição da Verba   "
+
+  ED_JURVERB:
+    type: string
+    length: 3
+    description: "Código da Verba     "
+
+  ED_NATREN:
+    type: string
+    length: 5
+    description: "Natureza do Rendimento"
+
+  ED_USERLGI:
+    type: string
+    length: 17
+    description: "Log de Inclusao   "
+
+  ED_USERLGA:
+    type: string
+    length: 17
+    description: "Log de Alteracao  "
+
+required: []

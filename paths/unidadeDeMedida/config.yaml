@@ -1,0 +1,113 @@
+get:
+  tags:
+    - UnidadeDeMedida
+  summary: EndPoint para retornar as unidades de medidas
+  operationId: getUnidadeDeMedida
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,01
+    - name: "pageNumber"
+      in: query
+      description: Número da página
+      required: false
+      schema:
+        type: number
+    - name: "pageSize"
+      in: query
+      description: Quantidade de itens por página
+      required: false
+      schema:
+        type: number
+    - name: "updatedAt"
+      in: query
+      description: Filtro de atualização (yyyy-mm-dd)
+      required: false
+      schema:
+        type: string
+    - name: "fieldsRet"
+      in: query
+      description: Filtro de campo (B1_FILIAL,B1_COD,B5_COD,...)
+      required: false
+      schema:
+        type: string
+    - name: "codigo"
+      in: query
+      description: Número do código da unidade de medida
+      required: false
+      schema:
+        type: string
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              data:
+                type: array
+                items:
+                 $ref: "./schemas/SAH.yaml"
+              hasNext:
+                description: Indica se existem mais registros disponíveis na próxima página.
+                type: boolean
+                example: true
+              parameters:
+                type: object
+                description: Define os parâmetros utilizados para consultar registros com base nas datas de atualização.
+                properties:
+                  update_parameter:
+                    type: string
+                    example: DD/MM/YYYY
+                  last_registry_change_sah:
+                    type: string
+                    example: DD/MM/YYYY
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 400
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 404
+              errorMessage:
+                type: string
+                example: Nenhum registro encontrado.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 500
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+  security:
+    - basicAuth: []

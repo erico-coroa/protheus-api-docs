@@ -1,8 +1,8 @@
 get:
   tags:
-    - Transportadora
-  summary: EndPoint para retornar transportadoras
-  operationId: getAllTransportadora
+    - SolicitacaoDeCompra
+  summary: EndPoint para retornar as solicitações de compra
+  operationId: getSolicitacaoDeCompra
   parameters:
     - name: "tenantId"
       in: header
@@ -17,14 +17,12 @@ get:
       required: false
       schema:
         type: number
-        # example: "1"
     - name: "pageSize"
       in: query
       description: Quantidade de itens por página
       required: false
       schema:
         type: number
-        # example: "100"
     - name: "updatedAt"
       in: query
       description: Filtro de atualização (yyyy-mm-dd)
@@ -39,18 +37,10 @@ get:
         type: string
     - name: "codigo"
       in: query
-      description: Número do código da transportadora
+      description: Número do código da solicitação de compra
       required: false
       schema:
         type: string
-        example: "1"
-    - name: "cgc"
-      in: query
-      description: CPF ou CNPJ da transportadora
-      required: false
-      schema:
-        type: string
-        example: "99999999999"
   responses:
     "200":
       description: Successful response
@@ -65,10 +55,21 @@ get:
               data:
                 type: array
                 items:
-                 $ref: "./schemas/SA4.yaml"
+                 $ref: "./schemas/SC1.yaml"
               hasNext:
+                description: Indica se existem mais registros disponíveis na próxima página.
                 type: boolean
                 example: true
+              parameters:
+                type: object
+                description: Define os parâmetros utilizados para consultar registros com base nas datas de atualização.
+                properties:
+                  update_parameter:
+                    type: string
+                    example: DD/MM/YYYY
+                  last_registry_change_sc1:
+                    type: string
+                    example: DD/MM/YYYY
     "400":
       description: Invalid input
       content:

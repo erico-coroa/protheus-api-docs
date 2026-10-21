@@ -1,0 +1,90 @@
+type: object
+properties:  
+  AH_CODERP:
+    type: string
+    length: 6 
+    description: "Codigo ERP"                                                                                                                                      
+
+  AH_CODRIEX:
+    type: string
+    length: 25 
+    description: "Codigo RIEX"                                                                                                                                     
+
+  AH_COD_CO:
+    type: string
+    length: 3 
+    description: "FIESP Ori.Certif.Cod. "   
+                                                                                                                                     
+
+  AH_COD_SIS:
+    type: string
+    length: 2 
+    description: "Codigo do Siscomex"       
+                                                                                                                                     
+
+  AH_DESCES:
+    type: string
+    length: 40 
+    description: "Descricao em Espanhol"    
+                                                                                                                                     
+
+  AH_DESCIN:
+    type: string
+    length: 40 
+    description: "Descricao em Ingles"      
+                                                                                                                                     
+
+  AH_DESCPO:
+    type: string
+    length: 40 
+    description: "Descricao em Portugues "  
+                                                                                                                                     
+
+  AH_FILIAL:
+    type: string
+    length: 2 
+    description: "Filial do Sistema  "      
+                                                                                                                                     
+
+  AH_SIS_MER:
+    type: string
+    length: 2 
+    description: "Siscomex Mercosul "       
+                                                                                                                                     
+
+  AH_UMFCI:
+    type: string
+    length: 4 
+    description: "Codigo da UM para FCI  "  
+                                                                                                                                     
+
+  AH_UMRES:
+    type: string
+    length: 9 
+    description: "Descricao Resumida  "     
+                                                                                                                                     
+
+  AH_UM_SRF:
+    type: string
+    length: 2 
+    description: "Codigo UM. da SRF "       
+                                                                                                                                     
+
+  AH_UNIMED:
+    type: string
+    length: 2 
+    description: "Unidade de Medida "       
+                                                                                                                                     
+
+  AH_USERLGA:
+    type: string
+    length: 17 
+    description: "Log de Alteracao  "       
+                                                                                                                                     
+
+  AH_USERLGI:
+    type: string
+    length: 17 
+    description: "Log de Inclusao"   
+
+required: []

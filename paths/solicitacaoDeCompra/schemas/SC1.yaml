@@ -1,0 +1,851 @@
+type: object
+properties:  
+  C1_ACCITEM:
+    type: string
+    length: 50
+    description: "Item Sol. ACC"                                                                                                           
+
+  C1_ACCNUM:
+    type: string
+    length: 50
+    description: "Solicitação ACC"          
+
+  C1_ACCPROC:
+    type: string
+    length: 1
+    description: "Indica se está no ACC."   
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  C1_APROV:
+    type: string
+    length: 1
+    description: "Flag de Aprovacäo"        
+                                                                                                                               
+
+  C1_CC:
+    type: string
+    length: 20
+    description: "Centro de Custo"          
+                                                                                                                               
+
+  C1_CLASS:
+    type: string
+    length: 1
+    description: "Classificacao Importacao" 
+                                                                                                                               
+
+  C1_CLVL:
+    type: string
+    length: 20
+    description: "Classe Valor Contabil"    
+                                                                                                                               
+
+  C1_CODCOMP:
+    type: string
+    length: 3
+    description: "Codigo do Comprador"      
+                                                                                                                               
+
+  C1_CODED:
+    type: string
+    length: 15
+    description: "Codigo do Edital"         
+                                                                                                                               
+
+  C1_CODGRP:
+    type: string
+    length: 4
+    description: "Grupo Veiculos/Oficina"   
+                                                                                                                               
+
+  C1_CODITE:
+    type: string
+    length: 27
+    description: "Produto Veiculos/Oficina" 
+                                                                                                                               
+
+  C1_CODORCA:
+    type: string
+    length: 8
+    description: "Codigo do Orcamento"      
+                                                                                                                               
+
+  C1_COMPRAC:
+    type: string
+    length: 1
+    description: "Em compra centralizada?"  
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  C1_CONDPAG:
+    type: string
+    length: 3
+    description: "Condicao de Pagamento"    
+                                                                                                                               
+
+  C1_CONTA:
+    type: string
+    length: 20
+    description: "Conta Contabil do Produto"
+                                                                                                                               
+
+  C1_COTACAO:
+    type: string
+    length: 6
+    description: "Numero da cotacao gerada" 
+                                                                                                                               
+
+  C1_DATPRF:
+    type: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data prev. da Necessidade"
+                                                                                                                               
+
+  C1_DESCRI:
+    type: string
+    length: 50
+    description: "Descricao do Produto"     
+                                                                                                                               
+
+  C1_DINICOM:
+    type: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Inicio Proc. Compras"
+                                                                                                                               
+
+  C1_DRPIMP:
+    type: string
+    length: 3
+    description: "Sol. import. pelo DRP?"   
+                                                                                                                               
+
+  C1_EMISSAO:
+    type: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data de Emissao da SC"    
+                                                                                                                               
+
+  C1_ESPEMP:
+    type: string
+    length: 1
+    description: "Especie de empenho"       
+    options: "1=Ordinario;2=Global;3=Estimativo"                                                                                               
+
+  C1_ESTOQUE:
+    type: string
+    length: 1
+    description: "Atualiza Estoque"         
+                                                                                                                               
+
+  C1_FABR:
+    type: string
+    length: 6
+    description: "Cod. Fabricante"          
+                                                                                                                               
+
+  C1_FABRICA:
+    type: string
+    length: 6
+    description: "Fabricante"               
+                                                                                                                               
+
+  C1_FABRLOJ:
+    type: string
+    length: 2
+    description: "Loja do Fabricante"       
+                                                                                                                               
+
+  C1_FILENT:
+    type: string
+    length: 2
+    description: "Filial de Entrega"        
+                                                                                                                               
+
+  C1_FILIAL:
+    type: string
+    length: 2
+    description: "Filial do Sistema"        
+                                                                                                                               
+
+  C1_NUM:
+    type: string
+    length: 6
+    description: "Numero da Solic.de Compra"
+                                                                                                                               
+
+  C1_ITEM:
+    type: string
+    length: 4
+    description: "Item da Solicitacao"      
+                                                                                                                               
+
+  C1_PRODUTO:
+    type: string
+    length: 15
+    description: "Codigo do Produto"        
+                                                                                                                               
+
+  C1_QUANT:
+    type: number
+    length: 15
+    decimal: 4
+    description: "Quantidade da SC"         
+                                                                                                                               
+
+  C1_QTSEGUM:
+    type: number
+    length: 12
+    decimal: 4
+    description: "Qtde na Segunda Unidade"  
+                                                                                                                               
+
+  C1_OBS:
+    type: string
+    length: 250
+    description: "Observacao"               
+                                                                                                                               
+
+  C1_OP:
+    type: string
+    length: 14
+    description: "Ordem de Producao"        
+                                                                                                                               
+
+  C1_ITEMCTA:
+    type: string
+    length: 20
+    description: "Item Da Conta Contabil"   
+                                                                                                                               
+
+  C1_LOCAL:
+    type: string
+    length: 2
+    description: "Armazem"                                                                                                                               
+
+  C1_FORNECE:
+    type: string
+    length: 6
+    description: "Codigo do fornecedor"     
+                                                                                                                               
+
+  C1_LOJA:
+    type: string
+    length: 2
+    description: "Loja do fornecedor"       
+                                                                                                                               
+
+  C1_PEDIDO:
+    type: string
+    length: 6
+    description: "Numero do pedido de compr"
+                                                                                                                               
+
+  C1_ITEMPED:
+    type: string
+    length: 4
+    description: "Item do pedido de compra" 
+                                                                                                                               
+
+  C1_QUJE:
+    type: number
+    length: 12
+    decimal: 4
+    description: "Quantidade em Pedido"     
+                                                                                                                               
+
+  C1_OK:
+    type: string
+    length: 2
+    description: "'Flag para SC''s marcadas  '"
+                                                                                                                               
+
+  C1_IDENT:
+    type: string
+    length: 4
+    description: "Identificador Rastream."  
+                                                                                                                               
+
+  C1_IMPORT:
+    type: string
+    length: 1
+    description: "Produto Importado"        
+    options: "S=Sim;N=Näo"                                                                                                                     
+
+  C1_OS:
+    type: string
+    length: 6
+    description: "Numero da OS"             
+                                                                                                                               
+
+  C1_NUM_SI:
+    type: string
+    length: 6
+    description: "Num. Solic. de Importacao"
+                                                                                                                               
+
+  C1_GRUPCOM:
+    type: string
+    length: 6
+    description: "Grupo de Compradores"     
+                                                                                                                               
+
+  C1_QUJE2:
+    type: number
+    length: 12
+    decimal: 2
+    description: "Quantidade Seg. em Pedido"
+                                                                                                                               
+
+  C1_ORIGEM:
+    type: string
+    length: 8
+    description: "Rotina Geradora"          
+                                                                                                                               
+
+  C1_PROJETO:
+    type: string
+    length: 1
+    description: "Utiliza Gerenc. Projetos" 
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  C1_RESIDUO:
+    type: string
+    length: 1
+    description: "Solic. eliminado residuo" 
+                                                                                                                               
+
+  C1_QTDORIG:
+    type: number
+    length: 12
+    decimal: 2
+    description: "Quantidade Original"      
+                                                                                                                               
+
+  C1_GERACTR:
+    type: string
+    length: 1
+    description: "Gera contratos"           
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  C1_QTDREEM:
+    type: number
+    length: 2
+    description: "Quantidade de Reemissões" 
+                                                                                                                               
+
+  C1_PROJET:
+    type: string
+    length: 10
+    description: "Codigo do Projeto"        
+                                                                                                                               
+
+  C1_REVISA:
+    type: string
+    length: 4
+    description: "Versao do Projeto"        
+                                                                                                                               
+
+  C1_ITEMGRD:
+    type: string
+    length: 3
+    description: "Item de Grade"            
+                                                                                                                               
+
+  C1_GRADE:
+    type: string
+    length: 1
+    description: "Grade"                                                                                                                                 
+
+  C1_NOMAPRO:
+    type: string
+    length: 25
+    description: "Nome Completo"            
+                                                                                                                               
+
+  C1_FLAGGCT:
+    type: string
+    length: 1
+    description: "Controle de Contrato"     
+                                                                                                                               
+
+  C1_PRECO:
+    type: number
+    length: 18
+    decimal: 6
+    description: "Preco unitario do item"   
+                                                                                                                               
+
+  C1_MOEDA:
+    type: number
+    length: 2
+    description: "Moeda"                                                                                                                                 
+
+  C1_LOJFABR:
+    type: string
+    length: 2
+    description: "Loja do Fabricante"       
+                                                                                                                               
+
+  C1_PROGRAM:
+    type: string
+    length: 10
+    description: "Programa Prd"             
+                                                                                                                               
+
+  C1_MODAL:
+    type: string
+    length: 2
+    description: "Modalidade"               
+                                                                                                                               
+
+  C1_NUMPR:
+    type: string
+    length: 15
+    description: "Numero Processo"          
+                                                                                                                               
+
+  C1_ORCAM:
+    type: string
+    length: 6
+    description: "Número do Orçamento"      
+                                                                                                                               
+
+  C1_REVISAO:
+    type: string
+    length: 3
+    description: "Revisao do Produto"       
+                                                                                                                               
+
+  C1_RATEIO:
+    type: string
+    length: 1
+    description: "Rateio"                   
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  C1_RATFIN:
+    type: string
+    length: 1
+    description: "Rateio Financeiro"        
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  C1_IDAPS:
+    type: string
+    length: 80
+    description: "ID de identif. da OP APS" 
+                                                                                                                               
+
+  C1_ITSCORI:
+    type: string
+    length: 4
+    description: "Item da SC origem"        
+                                                                                                                               
+
+  C1_SCORI:
+    type: string
+    length: 6
+    description: "Sol. de compra origem"    
+                                                                                                                               
+
+  C1_FISCORI:
+    type: string
+    length: 2
+    description: "Filial de origem"         
+                                                                                                                               
+
+  C1_NOMCOMP:
+    type: string
+    length: 30
+    description: "Nome do Comprador"        
+                                                                                                                               
+
+  C1_NOMFENT:
+    type: string
+    length: 60
+    description: "Nome da Filial de Entrega"
+                                                                                                                               
+
+  C1_PRDREF:
+    type: string
+    length: 15
+    description: "Produto Referencia"       
+                                                                                                                               
+
+  C1_PEDRES:
+    type: string
+    length: 6
+    description: "Número do Pedido de Venda"
+                                                                                                                               
+
+  C1_NRBPIMS:
+    type: string
+    length: 10
+    description: "Numero do boletim"        
+                                                                                                                               
+
+  C1_PREFIX:
+    type: string
+    length: 4
+    description: "Prefixo Conta Contabil"   
+                                                                                                                               
+
+  C1_GRPRD:
+    type: string
+    length: 4
+    description: "Grupo Produto"            
+                                                                                                                               
+
+  C1_FLAGSC:
+    type: string
+    length: 5
+    description: "Flag Solicitação Compra"  
+                                                                                                                               
+
+  C1_NFCWF:
+    type: string
+    length: 1
+    description: "Receber notificação WF"   
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  C1_UM:
+    type: string
+    length: 2
+    description: "Unidade de medida"        
+                                                                                                                               
+
+  C1_SEGUM:
+    type: string
+    length: 2
+    description: "Segunda Unidade de Medida"
+                                                                                                                               
+
+  C1_SOLICIT:
+    type: string
+    length: 14
+    description: "Nome do Solicitante"      
+                                                                                                                               
+
+  C1_TX:
+    type: string
+    length: 2
+    description: "Flag para Transmissao"    
+                                                                                                                               
+
+  C1_UNIDREQ:
+    type: string
+    length: 5
+    description: "Unidade Requisitante"     
+                                                                                                                               
+
+  C1_TPOP:
+    type: string
+    length: 1
+    description: "Tipo da Ordem de Produção"
+    options: "F=Firme;P=Prevista"                                                                                                              
+
+  C1_USER:
+    type: string
+    length: 6
+    description: "Codigo do Usuario"        
+                                                                                                                               
+
+  C1_SEQMRP:
+    type: string
+    length: 6
+    description: "Seq MRP que originou SC"  
+                                                                                                                               
+
+  C1_VUNIT:
+    type: number
+    length: 11
+    decimal: 2
+    description: "Preço Unitário Estimado"  
+                                                                                                                               
+
+  C1_TIPOEMP:
+    type: string
+    length: 1
+    description: "Tipo de empenho"          
+    options: "1=Dispensada;2=Tomada de Preco;3=Concorrencia;4=Carta Convite;5=Outra"                                                           
+
+  C1_TAREFA:
+    type: string
+    length: 12
+    description: "Codigo da Tarefa"         
+                                                                                                                               
+
+  C1_TRT:
+    type: string
+    length: 3
+    description: "Sequencia do empenho"     
+                                                                                                                               
+
+  C1_TOTAL:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor total do item"      
+                                                                                                                               
+
+  C1_TIPO:
+    type: number
+    length: 1
+    description: "Controle de SC ou SI"     
+                                                                                                                               
+
+  C1_SIGLA:
+    type: string
+    length: 2
+    description: "Local Entreg"             
+                                                                                                                               
+
+  C1_WFID:
+    type: string
+    length: 8
+    description: "ID Workflow"              
+                                                                                                                               
+
+  C1_YEMERGE:
+    type: string
+    length: 1
+    description: "Sol. de Com. Emergencial?"
+    options: "S=Sim;N=Nao"                                                                                                                     
+
+  C1_YRESPWF:
+    type: string
+    length: 1
+    description: "Resposta WF"              
+                                                                                                                               
+
+  C1_USERLGI:
+    type: string
+    length: 17
+    description: "Log de Inclusao"          
+                                                                                                                               
+
+  C1_USERLGA:
+    type: string
+    length: 17
+    description: "Log de Alteracao"         
+                                                                                                                               
+
+  C1_TPSC:
+    type: string
+    length: 1
+    description: "Tipo de Solicitacao"      
+    options: "1=Normal;2=Licitacao"                                                                                                            
+
+  C1_TPMOD:
+    type: string
+    length: 2
+    description: "Tipo Modalidade"          
+                                                                                                                               
+
+  C1_USRCODE:
+    type: string
+    length: 6
+    description: "Geração Cotação MultiUsr"
+                                                                                                                               
+
+  C1_YCEME:
+    type: string
+    length: 200
+    description: "Descricao cientifica"     
+                                                                                                                               
+
+  C1_YVEICUL:
+    type: string
+    length: 7
+    description: "Placa do Veiculo"         
+                                                                                                                               
+
+  C1_YTIPOV:
+    type: string
+    length: 1
+    description: "Tipo Veiculo"             
+    options: "1=CAMINHAO;2=EMPILHADEIRA;3=VEICULO LEVE"                                                                                        
+
+  C1_TIPCLEG:
+    type: string
+    length: 13
+    description: "Legenda do tipo de compra"
+                                                                                                                               
+
+  C1_TIPCOM:
+    type: string
+    length: 3
+    description: "Tipo de Compra"           
+                                                                                                                               
+
+  C1_YPRECO:
+    type: number
+    length: 16
+    decimal: 6
+    description: "Valor Unitar"             
+                                                                                                                               
+
+  C1_YPOSIPI:
+    type: string
+    length: 10
+    description: "Nomenclatura Ext.Mercosul"
+                                                                                                                               
+
+  C1_XDTFIM:
+    type: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Fim Processo"        
+                                                                                                                               
+
+  C1_XDTINI:
+    type: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Inicio Processamento"
+                                                                                                                               
+
+  C1_XHRFIM:
+    type: string
+    length: 5
+    description: "Hora fim de processamento"
+                                                                                                                               
+
+  C1_XHRINI:
+    type: string
+    length: 5
+    description: "Hora inicio processamento"
+                                                                                                                               
+
+  C1_XCLASSI:
+    type: L
+    length: 1
+    description: "Classificada?"            
+                                                                                                                               
+
+  C1_XCONTFI:
+    type: string
+    length: 2
+    description: "Filial do Contrato"       
+                                                                                                                               
+
+  C1_XSTGCT:
+    type: string
+    length: 1
+    description: "Status GCT"               
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  C1_XCONTPR:
+    type: string
+    length: 15
+    description: "Contrato Registro Preco"  
+                                                                                                                               
+
+  C1_XGRPAPR:
+    type: string
+    length: 6
+    description: "Grupo Aprovacao"          
+                                                                                                                               
+
+  C1_XNUMCT:
+    type: string
+    length: 15
+    description: "Numero do Contrato"       
+                                                                                                                               
+
+  C1_XNUMREV:
+    type: string
+    length: 3
+    description: "Revisao do Contrato"      
+                                                                                                                               
+
+  C1_XSOL:
+    type: string
+    length: 6
+    description: "Requisitante Solicitacao" 
+                                                                                                                               
+
+  C1_XCTADT:
+    type: string
+    length: 15
+    description: "N. Aditivo Contrato"      
+                                                                                                                               
+
+  C1_XTIPOSC:
+    type: string
+    length: 3
+    description: "Tipo de SC"               
+                                                                                                                               
+
+  C1_XTPDESC:
+    type: string
+    length: 20
+    description: "Descrição do Tipo SC"     
+                                                                                                                               
+
+  C1_XCONTPL:
+    type: string
+    length: 6
+    description: "Num Planilha Contrato"    
+                                                                                                                               
+
+  C1_XCONTIT:
+    type: string
+    length: 3
+    description: "Item da Planilha"         
+                                                                                                                               
+
+  C1_YWFLEG:
+    type: string
+    length: 15
+    description: "Legenda do Workflow"      
+                                                                                                                               
+
+  C1_YWFID:
+    type: string
+    length: 50
+    description: "Id. Processo de Workflow" 
+                                                                                                                               
+
+  C1_YWFSTS:
+    type: string
+    length: 1
+    description: "Status Proc. de Workflow" 
+    options: "1=Pendente;2=Enviado;3=Respondido"                                                                                               
+
+  C1_YDTALT:
+    type: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data de Alteracao"        
+                                                                                                                               
+
+  C1_YUSEALT:
+    type: string
+    length: 20
+    description: "User Alterac"             
+                                                                                                                               
+
+  C1_YDATINC:
+    type: string
+    length: 10
+    description: "Data Incl"                                                                                                                             
+
+  C1_YDATALT:
+    type: string
+    length: 10
+    description: "Data Alterac"             
+                                                                                                                               
+
+  C1_YESPITE:
+    type: string
+    length: 250
+    description: "Especificacao do Item"    
+                                                                                                                               
+
+  C1_YAPLITE:
+    type: string
+    length: 250
+    description: "Aplicacao do Item"        
+                                                                                                 
+required: []                                                                                                 

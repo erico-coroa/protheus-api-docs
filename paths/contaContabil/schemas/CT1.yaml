@@ -1,0 +1,505 @@
+type: object
+properties:  
+  CT1_ACAT01:
+    type: string
+    length: 1 
+    description: "Aceita Atividade 01"      
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_ACAT02:
+    type: string
+    length: 1 
+    description: "Aceita Atividade 02"      
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_ACAT03:
+    type: string
+    length: 1 
+    description: "Aceita Atividade 03"      
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_ACAT04:
+    type: string
+    length: 1 
+    description: "Aceita Atividade 04"      
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_ACATIV:
+    type: string
+    length: 1 
+    description: "Aceita Outra Atividade?"  
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_AT01OB:
+    type: string
+    length: 1 
+    description: "Obrigatório Ativ.01"      
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_AT02OB:
+    type: string
+    length: 1 
+    description: "Obrigatório Ativ.02"      
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_AT03OB:
+    type: string
+    length: 1 
+    description: "Obrigatório Ativ.03"      
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_AT04OB:
+    type: string
+    length: 1 
+    description: "Obrigatório Ativ.04"      
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_ATOBRG:
+    type: string
+    length: 1 
+    description: "Outra ativ. obrigatoria?" 
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_PVARC :
+    type: string
+    length: 1 
+    description: "Permite variação cambial?"
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_SPEDST:
+    type: string
+    length: 1 
+    description: "SPED Sint."               
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_TPO01 :
+    type: string
+    length: 2 
+    description: "Tipo Ctb 01"              
+                                                                                                                                  
+
+  CT1_TPO02 :
+    type: string
+    length: 2 
+    description: "Tipo Ctb 02"              
+                                                                                                                                  
+
+  CT1_TPO03 :
+    type: string
+    length: 2 
+    description: "Tipo Ctb 03"              
+                                                                                                                                  
+
+  CT1_TPO04 :
+    type: string
+    length: 2 
+    description: "Tipo Ctb 04"              
+                                                                                                                                  
+
+  CT1_05OBRG:
+    type: string
+    length: 1 
+    description: "Obrigatória entidade 05?" 
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_ACCLVL:
+    type: string
+    length: 1 
+    description: "Aceita Cl Vl no Lcto ?"   
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_ACCUST:
+    type: string
+    length: 1 
+    description: "Aceita CC no Lcto Cont?"  
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_ACET05:
+    type: string
+    length: 1 
+    description: "Aceita entidade 05?"      
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_ACITEM:
+    type: string
+    length: 1 
+    description: "Aceita Item no Lcto Cont?"
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_AGLSLD:
+    type: string
+    length: 1 
+    description: "Aglutina Saldos         ?"
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_AGLUT :
+    type: string
+    length: 1 
+    description: "Aglutina"                 
+    options: "1=Sim; 2=Nao"                                                                                                                    
+
+  CT1_FILIAL:
+    type: string
+    length: 2 
+    description: "Filial do Sistema"        
+                                                                                                                                  
+
+  CT1_CONTA :
+    type: string
+    length: 20 
+    description: "Codigo da Conta"          
+                                                                                                                                  
+
+  CT1_DESC01:
+    type: string
+    length: 40 
+    description: "Descricao na Moeda 1"     
+                                                                                                                                  
+
+  CT1_DESC02:
+    type: string
+    length: 40 
+    description: "Descricao na Moeda 2"     
+                                                                                                                                  
+
+  CT1_DESC03:
+    type: string
+    length: 40 
+    description: "Descricao na Moeda 3"     
+                                                                                                                                  
+
+  CT1_DESC04:
+    type: string
+    length: 40 
+    description: "Descricao na Moeda 4"     
+                                                                                                                                  
+
+  CT1_DESC05:
+    type: string
+    length: 40 
+    description: "Descricao na Moeda 5"     
+                                                                                                                                  
+
+  CT1_CLASSE:
+    type: string
+    length: 1 
+    description: "Classe da Conta"          
+    options: "1=Sintetica;2=Analitica"                                                                                                         
+
+  CT1_BLOQ  :
+    type: string
+    length: 1 
+    description: "Conta Bloqueada"          
+    options: "1=Bloqueada;2=Nao Bloqueada"                                                                                                     
+
+  CT1_DTBLIN:
+    type: string
+    example: "yyyymmdd"
+    length: 8 
+    description: "Data Inicio Bloqueio"     
+                                                                                                                                  
+
+  CT1_DTBLFI:
+    type: string
+    example: "yyyymmdd"
+    length: 8 
+    description: "Data Fim Bloqueio"        
+                                                                                                                                  
+
+  CT1_DC    :
+    type: string
+    length: 1 
+    description: "Digito de Controle"       
+                                                                                                                                  
+
+  CT1_CC    :
+    type: string
+    length: 20 
+    description: "Codigo CC Contabil"       
+                                                                                                                                  
+
+  CT1_CVD02 :
+    type: string
+    length: 1 
+    description: "Crit Conv Moeda 2 Debito" 
+    options: "1=Diaria;2=Media;3=Mensal;4=Informada;5=Nao tem Conversao;6=Fixo;7=Mensal Historica;8=Media Historica;9=Vencimento;A=Nao Ajusta" 
+
+  CT1_CVD03 :
+    type: string
+    length: 1 
+    description: "Crit Conv Moeda 3 Debito" 
+    options: "1=Diaria;2=Media;3=Mensal;4=Informada;5=Nao tem Conversao;6=Fixo;7=Mensal Historica;8=Media Historica;9=Vencimento;A=Nao Ajusta" 
+
+  CT1_CVD04 :
+    type: string
+    length: 1 
+    description: "Crit Conv Moeda 4 Debito" 
+    options: "1=Diaria;2=Media;3=Mensal;4=Informada;5=Nao tem Conversao;6=Fixo;7=Mensal Historica;8=Media Historica;9=Vencimento;A=Nao Ajusta" 
+
+  CT1_CVD05 :
+    type: string
+    length: 1 
+    description: "Crit Conv Moeda 5 Debito" 
+    options: "1=Diaria;2=Media;3=Mensal;4=Informada;5=Nao tem Conversao;6=Fixo;7=Mensal Historica;8=Media Historica;9=Vencimento;A=Nao Ajusta" 
+
+  CT1_CVC02 :
+    type: string
+    length: 1 
+    description: "Crit Conv Moeda 2 Credito"
+    options: "1=Diaria;2=Media;3=Mensal;4=Informada;5=Nao tem Conversao;6=Fixo;7=Mensal Historica;8=Media Historica;9=Vencimento;A=Nao Ajusta" 
+
+  CT1_CVC03 :
+    type: string
+    length: 1 
+    description: "Crit Conv Moeda 3 Credito"
+    options: "1=Diaria;2=Media;3=Mensal;4=Informada;5=Nao tem Conversao;6=Fixo;7=Mensal Historica;8=Media Historica;9=Vencimento;A=Nao Ajusta" 
+
+  CT1_CVC04 :
+    type: string
+    length: 1 
+    description: "Crit Conv Moeda 4 Credito"
+    options: "1=Diaria;2=Media;3=Mensal;4=Informada;5=Nao tem Conversao;6=Fixo;7=Mensal Historica;8=Media Historica;9=Vencimento;A=Nao Ajusta" 
+
+  CT1_CVC05 :
+    type: string
+    length: 1 
+    description: "Crit Conv Moeda 5 Credito"
+    options: "1=Diaria;2=Media;3=Mensal;4=Informada;5=Nao tem Conversao;6=Fixo;7=Mensal Historica;8=Media Historica;9=Vencimento;A=Nao Ajusta" 
+
+  CT1_CTASUP:
+    type: string
+    length: 20 
+    description: "Conta Superior"           
+                                                                                                                                  
+
+  CT1_HP    :
+    type: string
+    length: 3 
+    description: "Historico Padrao"         
+                                                                                                                                  
+
+  CT1_DTEXIS:
+    type: string
+    example: "yyyymmdd"
+    length: 8 
+    description: "Data Inicio Existencia"   
+                                                                                                                                  
+
+  CT1_DTEXSF:
+    type: string
+    example: "yyyymmdd"
+    length: 8 
+    description: "Data Final de Existencia" 
+                                                                                                                                  
+
+  CT1_CTAVM :
+    type: string
+    length: 20 
+    description: "Conta Var Monetaria"      
+                                                                                                                                  
+
+  CT1_CTARED:
+    type: string
+    length: 20 
+    description: "Conta Redutora Var Monet" 
+                                                                                                                                  
+
+  CT1_CTALP :
+    type: string
+    length: 20 
+    description: "Conta Lucros/Perdas"      
+                                                                                                                                  
+
+  CT1_CTAPON:
+    type: string
+    length: 20 
+    description: "Conta Ponte Lucros/Perdas"
+                                                                                                                                  
+
+  CT1_BOOK  :
+    type: string
+    length: 20 
+    description: "Configuracao de Livros"   
+                                                                                                                                  
+
+  CT1_GRUPO :
+    type: string
+    length: 8 
+    description: "Grupo Contabil"           
+                                                                                                                                  
+
+  CT1_CCOBRG:
+    type: string
+    length: 1 
+    description: "CC Obrigatorio Lcto Cont?"
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_ITOBRG:
+    type: string
+    length: 1 
+    description: "Item Obrig. Lcto Cont?"   
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_CLOBRG:
+    type: string
+    length: 1 
+    description: "Cl Vl Obrigatorio Lcto ?" 
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_LALUR :
+    type: string
+    length: 1 
+    description: "Tipo de Conta Lalur"      
+    options: "0=Nao pertence;1=Adicao dedutivel;2=Adicao Indedutivel;3=Exclusao Dedutivel;4=Exclusao Indedutivel;5=Lucro Liq. antes da C.S."   
+
+  CT1_CTLALU:
+    type: string
+    length: 20 
+    description: "Conta Lalur"              
+                                                                                                                                  
+
+  CT1_ESTOUR:
+    type: string
+    length: 1 
+    description: "Conta Estourada"          
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_LALHIR:
+    type: string
+    length: 1 
+    description: "Historico no Lalur ?"     
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_CODIMP:
+    type: string
+    length: 20 
+    description: "Codigo de Impressao"      
+                                                                                                                                  
+
+  CT1_AJ_INF:
+    type: string
+    length: 1 
+    description: "Ajusta por inflacao"      
+    options: "1=Sim;2=Nao"                                                                                                                     
+
+  CT1_INDNAT:
+    type: string
+    length: 1 
+    description: "Class. Manad"             
+    options: "1=Ativo; 2=Passivo; 3=Patrimônio Líquido; 4=Despesa/Custo; 5=Receita; 9=Outros"                                                  
+
+  CT1_INTP  :
+    type: string
+    length: 1 
+    description: "Integraçao com o PIMS"    
+    options: "1=Sim;2=Não"                                                                                                                     
+
+  CT1_CVD01 :
+    type: string
+    length: 1 
+    description: "Crit. Conv. M1 Debito"    
+    options: "1=Diaria;2=Media;3=Mensal;4=Informada;5=Nao tem Conversao;6=Fixo;7=Mensal Historica;8=Media Historica;9=Vencimento;A=Nao Ajusta" 
+
+  CT1_CVC01 :
+    type: string
+    length: 1 
+    description: "Crit Conv Moeda 1 Credit" 
+    options: "1=Diaria;2=Media;3=Mensal;4=Informada;5=Nao tem Conversao;6=Fixo;7=Mensal Historica;8=Media Historica;9=Vencimento;A=Nao Ajusta" 
+
+  CT1_DIOPS :
+    type: string
+    length: 1 
+    description: "Diops"                    
+    options: "1=ATIVO;2=PASSIVO;3=RECEITA;4=DESPESAS"                                                                                          
+
+  CT1_CTAORC:
+    type: string
+    length: 12 
+    description: "Conta Orcam. PCO"         
+                                                                                                                                  
+
+  CT1_NORMAL:
+    type: string
+    length: 1 
+    description: "Condicao Normal"          
+    options: "1=Devedora;2=Credora"                                                                                                            
+
+  CT1_NTSPED:
+    type: string
+    length: 2 
+    description: "Natureza conta para SPED" 
+    options: "01=Conta de Ativo;02=Conta de Passivo;03=Patrimônio Líquido;04=Conta de Resultado;05=Conta de Compensação;09=Outras"             
+
+  CT1_RES   :
+    type: string
+    length: 10 
+    description: "Codigo Reduzido"          
+                                                                                                                                  
+
+  CT1_NCUSTO:
+    type: string
+    example: "yyyymmdd"
+    length: 2 
+    description: "NrDigitos Centro de Custo"
+                                                                                                                                  
+
+  CT1_RGNV1 :
+    type: string
+    length: 12 
+    description: "Regra de Ligacao Nivel 1" 
+                                                                                                                                  
+
+  CT1_RGNV2 :
+    type: string
+    length: 12 
+    description: "Regra de Ligacao Nivel 2" 
+                                                                                                                                  
+
+  CT1_RGNV3 :
+    type: string
+    length: 12 
+    description: "Regra de Ligacao Nivel 3" 
+                                                                                                                                  
+
+  CT1_TRNSEF:
+    type: string
+    length: 20 
+    description: "Conta de Ajuste da Conver"
+                                                                                                                                  
+
+  CT1_TPLALU:
+    type: string
+    length: 2 
+    description: "Classificação no Lalur"   
+                                                                                                                                  
+
+  CT1_RATEIO:
+    type: string
+    length: 6 
+    description: "Codigo de Rateio"         
+                                                                                                                                  
+
+  CT1_USERGI:
+    type: string
+    length: 17 
+    description: "Log de Inclusao"          
+                                                                                                                                  
+
+  CT1_USERGA:
+    type: string
+    length: 17 
+    description: "Log de Alteracao"         
+                                                                                                                                  
+
+  CT1_NATCTA:
+    type: string
+    length: 2 
+    description: "Natureza da conta Contabi"
+    options: "01=Conta de Ativo;02=Conta de Passivo;03=Patrimônio Líquido;04=Conta de Resultado;05=Conta de Compensação;09=Outras"             
+
+  CT1_MOEDVM:
+    type: string
+    length: 2 
+    description: "Moeda forte da variacao"  
+                                                                                                                                  
+required: []            

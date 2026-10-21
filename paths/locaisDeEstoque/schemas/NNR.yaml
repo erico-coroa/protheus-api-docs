@@ -1,0 +1,89 @@
+type: object
+properties:
+  NNR_AMZUNI:
+    type: string
+    length: 1
+    description: "Armazenagem Unitizada "
+    options: "1=Sim;2=Não "
+
+  NNR_ANP45:
+    type: boolean
+    length: 1
+    description: "ANP45"
+
+  NNR_ARMALT:
+    type: string
+    length: 1
+    description: "Verifica Saldo Alternativ"
+    options: "1=Sim;2=Não  "
+
+  NNR_CODCLI:
+    type: string
+    length: 6
+    description: "Codigo do Cliente    "
+
+  NNR_CODIGO:
+    type: string
+    length: 2
+    description: "Codigo do Local   "
+
+  NNR_CTRAB:
+    type: string
+    length: 6
+    description: "Codigo Centro de Trabalho"
+
+  NNR_DESCRI:
+    type: string
+    length: 20
+    description: "Descricao do Local  "
+
+  NNR_FILIAL:
+    type: string
+    length: 2
+    description: "Filial do Sistema  "
+
+  NNR_INTP:
+    type: string
+    length: 1
+    description: "Integraçao com o PIMS  "
+    options: "1=Depósito;2=Unidade Receptora;3=Não integra;4=Depósito Abastecimento   "
+
+  NNR_LOJCLI:
+    type: string
+    length: 2
+    description: "Loja do Cliente "
+
+  NNR_MRP:
+    type: string
+    length: 1
+    description: "Entra no cálculo MRP?  "
+    options: "1=Sim;2=Não     "
+
+  NNR_TIPO:
+    type: string
+    length: 1
+    description: "Tipo de Armazém      "
+    options: "1=Padrão;2=Próprio;3=Terceiros     "
+
+  NNR_USERGA:
+    type: string
+    length: 17
+    description: "Log de Alteracao "
+
+  NNR_USERGI:
+    type: string
+    length: 17
+    description: "Log de Inclusao "
+
+  NNR_VDADMS:
+    type: string
+    length: 1
+    description: "Armazém de Venda no DMS? "
+    options: "0=Não;1=Sim        "
+
+  NNR_WSAAS:
+    type: boolean
+    length: 1
+    description: "Controle WMS SaaS "
+
+required: []
