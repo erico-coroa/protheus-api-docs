@@ -1,0 +1,1194 @@
+type: object
+properties:
+  C7_MSUIDT:
+    type: string
+    length: 36
+    description: ""
+
+  C7_ACCITEM:
+    type: string
+    length: 50
+    description: "Item Ped. ACC"
+
+  C7_ACCNUM:
+    type: string
+    length: 50
+    description: "Pedido ACC"
+
+  C7_ACCPROC:
+    type: string
+    length: 1
+    description: "Inidica se esta no ACC."
+    options: "1=Sim;2=Não"
+
+  C7_AGENTE:
+    type: string
+    length: 3
+    description: "Agente Embarcador"
+
+  C7_ALIQINS:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Aliquota de INSS"
+
+  C7_ALIQIR:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Aliquota IRRF"
+
+  C7_ALIQISS:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Aliquota de ISS"
+
+  C7_ALQCF2:
+    type: number
+    length: 6
+    decimal: 2
+    description: "Aliquota COF"
+
+  C7_ALQCOF:
+    type: number
+    length: 6
+    decimal: 2
+    description: "Aliquota Cofins"
+
+  C7_ALQCSL:
+    type: number
+    length: 6
+    decimal: 2
+    description: "Aliquota CSLL"
+
+  C7_ALQPIS:
+    type: number
+    length: 6
+    decimal: 2
+    description: "Aliquota PIS"
+
+  C7_ALQPS2:
+    type: number
+    length: 6
+    decimal: 2
+    description: "Aliquota PIS"
+
+  C7_APROV:
+    type: string
+    length: 6
+    description: "Grupo de Aprovacao"
+
+  C7_ARMAZEM:
+    type: string
+    length: 7
+    description: "Armazem"
+
+  C7_BASCOF:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Base Cofins"
+
+  C7_BASECSL:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Base CSLL"
+
+  C7_BASEICM:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor Base do ICMS"
+
+  C7_BASEINS:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Base de INSS"
+
+  C7_BASEIPI:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor Base de Calc. IPI"
+
+  C7_BASEIR:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor Base de Calc. IRRF"
+
+  C7_BASEISS:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Base de calculo do ISS"
+
+  C7_BASESOL:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Base do ICMS Solidario"
+
+  C7_BASIMP5:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Base de Calculo Imposto 5"
+
+  C7_BASIMP6:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Base de Calculo Imposto 6"
+
+  C7_BASPIS:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Base PIS"
+
+  C7_CC:
+    type: string
+    length: 20
+    description: "Centro de Custo"
+
+  C7_CF:
+    type: string
+    length: 5
+    description: "Codigo Fiscal da Operacao"
+
+  C7_DESCRI:
+    type: string
+    length: 50
+    description: "Descricao do Produto"
+
+  C7_CODTAB:
+    type: string
+    length: 3
+    description: "Tabela de Preco"
+
+  C7_DATPRF:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Entrega"
+
+  C7_COND:
+    type: string
+    length: 3
+    description: "Codigo da condicao de Pgt"
+
+  C7_CONTATO:
+    type: string
+    length: 15
+    description: "Contato"
+
+  C7_CLVL:
+    type: string
+    length: 20
+    description: "Classe Valor Contabil"
+
+  C7_EMISSAO:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data de Emissao"
+
+  C7_CONTA:
+    type: string
+    length: 20
+    description: "Conta Contabil do Produto"
+
+  C7_DESC1:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Desconto 1 em cascata"
+
+  C7_DESC2:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Desconto 2 em cascata"
+
+  C7_DESC3:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Desconto 3 em cascata"
+
+  C7_EMITIDO:
+    type: string
+    length: 1
+    description: "'''S'' se ja''emitiu         '"
+
+  C7_ENCER:
+    type: string
+    length: 1
+    description: "Pedido Encerrado"
+
+  C7_CODLIB:
+    type: string
+    length: 10
+    description: "Codigo de Liberacao"
+
+  C7_CONTROL:
+    type: string
+    length: 1
+    description: "Campo de Controle"
+
+  C7_CONAPRO:
+    type: string
+    length: 1
+    description: "Controle de Aprovacao"
+
+  C7_DESC:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Desconto no item"
+
+  C7_DESPESA:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor das Despesas"
+
+  C7_CODGRP:
+    type: string
+    length: 4
+    description: "Grupo Veiculos/Oficina"
+
+  C7_CODITE:
+    type: string
+    length: 27
+    description: "Produto Veiculos/Oficina"
+
+  C7_CODORCA:
+    type: string
+    length: 8
+    description: "Codigo do Orcamento"
+
+  C7_DTLANC:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data de Contabilizacao"
+
+  C7_CONTRA:
+    type: string
+    length: 15
+    description: "Numero do Contrato"
+
+  C7_CONTREV:
+    type: string
+    length: 3
+    description: "Revisão do Contrato"
+
+  C7_CODCRED:
+    type: string
+    length: 6
+    description: "Codigo do Credor"
+
+  C7_ESPEMP:
+    type: string
+    length: 1
+    description: "Especie de Empenho"
+    options: "1=Ordinario;2=Global;3=Estimativo"
+
+  C7_DT_IMP:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Dt Import."
+
+  C7_DEST:
+    type: string
+    length: 3
+    description: "Destino"
+
+  C7_COMPRA:
+    type: string
+    length: 3
+    description: "Comprador"
+
+  C7_CONSIG:
+    type: string
+    length: 3
+    description: "Codigo do Consignatario"
+
+  C7_CONF_PE:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Conf. do Pedido"
+
+  C7_DESP:
+    type: string
+    length: 3
+    description: "Despachante"
+
+  C7_EXPORTA:
+    type: string
+    length: 6
+    description: "Exportador"
+
+  C7_CONTAIN:
+    type: string
+    length: 1
+    description: "Modalidade de Container"
+    options: "1=House to House;2=House to Pier;3=Pier to House;4=Pier to Pier"
+
+  C7_CONTA20:
+    type: number
+    length: 4
+    description: "'Containers de 20''        '"
+
+  C7_CONTA40:
+    type: number
+    length: 4
+    description: "'Containers de 40''        '"
+
+  C7_CON40HC:
+    type: number
+    length: 4
+    description: "Containers de 40 hc"
+
+  C7_FABRICA:
+    type: string
+    length: 6
+    description: "Fabricante"
+
+  C7_DT_EMB:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Dt Embarque"
+
+  C7_DIACTB:
+    type: string
+    length: 2
+    description: "Cod Diario Contabilidade"
+
+  C7_EX_NCM:
+    type: string
+    length: 3
+    description: "ExNCM  determina % I.I."
+
+  C7_EX_NBM:
+    type: string
+    length: 3
+    description: "ExNBM  determina % IPI"
+
+  C7_DINICQ:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data início de CQ"
+
+  C7_DINITRA:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data início de trânsito"
+
+  C7_DINICOM:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data p/ início da compra"
+
+  C7_ESTOQUE:
+    type: string
+    length: 1
+    description: "Atualiza Estoque"
+
+  C7_CODED:
+    type: string
+    length: 15
+    description: "Codigo do Edital"
+
+  C7_FILCEN:
+    type: string
+    length: 2
+    description: "Fil.Centraliz.Ped.Compra"
+
+  C7_CODRDA:
+    type: string
+    length: 6
+    description: "Cod.RDA.Pag."
+
+  C7_FILEDT:
+    type: string
+    length: 2
+    description: "Filial do Edital"
+
+  C7_DRPIMP:
+    type: string
+    length: 3
+    description: "Ped. import. pelo DRP?"
+
+  C7_CODNE:
+    type: string
+    length: 12
+    description: "Cód. da Nota de Empenho"
+
+  C7_DIREITO:
+    type: M
+    length: 10
+    description: "Direitos mínimos das part"
+
+  C7_DEDUCAO:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Dedução"
+
+  C7_FATDIRE:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Faturamento Direto"
+
+  C7_COTEX:
+    type: string
+    length: 1
+    description: "Cotacao Ext"
+    options: "1=Sim;2=Nao"
+
+  C7_FILIAL:
+    type: string
+    length: 2
+    description: "Filial do Sistema"
+
+  C7_TIPO:
+    type: number
+    length: 1
+    description: "Controle de PC ou AE"
+
+  C7_ITEM:
+    type: string
+    length: 4
+    description: "Item do pedido de compra"
+
+  C7_PRODUTO:
+    type: string
+    length: 15
+    description: "Codigo do produto"
+
+  C7_UM:
+    type: string
+    length: 2
+    description: "Unidade de medida"
+
+  C7_SEGUM:
+    type: string
+    length: 2
+    description: "Segunda Unidade de Medida"
+
+  C7_QUANT:
+    type: number
+    length: 15
+    decimal: 4
+    description: "Quantidade pedida"
+
+  C7_QTSEGUM:
+    type: number
+    length: 12
+    decimal: 4
+    description: "Qtde na Segunda Unidade"
+
+  C7_PRECO:
+    type: number
+    length: 18
+    decimal: 6
+    description: "Preco unitario do item"
+
+  C7_TOTAL:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor total do item"
+
+  C7_IPI:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Alíquota de IPI"
+
+  C7_NUMSC:
+    type: string
+    length: 6
+    description: "Numero da solicita.compra"
+
+  C7_ITEMSC:
+    type: string
+    length: 4
+    description: "Item da solicita.compra"
+
+  C7_LOCAL:
+    type: string
+    length: 2
+    description: "Armazem"
+
+  C7_USER:
+    type: string
+    length: 6
+    description: "Codigo do Usuario"
+
+  C7_OBS:
+    type: string
+    length: 250
+    description: "Observacoes"
+
+  C7_FORNECE:
+    type: string
+    length: 6
+    description: "Codigo do fornecedor"
+
+  C7_ITEMCTA:
+    type: string
+    length: 20
+    description: "Item da Conta Contabil"
+
+  C7_NUM:
+    type: string
+    length: 6
+    description: "Numero do pedido de compr"
+
+  C7_TES:
+    type: string
+    length: 3
+    description: "Tipo de entrada da nota"
+
+  C7_LOJA:
+    type: string
+    length: 2
+    description: "Loja do fornecedor"
+
+  C7_FILENT:
+    type: string
+    length: 2
+    description: "Filial para Entrega"
+
+  C7_QUJE:
+    type: number
+    length: 12
+    decimal: 4
+    description: "'Quantidade ja'' entregue  '"
+
+  C7_REAJUST:
+    type: string
+    length: 3
+    description: "Codigo da formula do reaj"
+
+  C7_FRETE:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do frete combinado"
+
+  C7_TPFRETE:
+    type: string
+    length: 1
+    description: "Tipo do Frete Utilizado"
+
+  C7_TX:
+    type: string
+    length: 2
+    description: "Flag para Transmissao"
+
+  C7_QTDREEM:
+    type: number
+    length: 2
+    description: "Quantidade de Reemissoes"
+
+  C7_OP:
+    type: string
+    length: 14
+    description: "Ordem de Producao"
+
+  C7_RESIDUO:
+    type: string
+    length: 1
+    description: "PC com Residuo Eliminado."
+
+  C7_NUMCOT:
+    type: string
+    length: 6
+    description: "Numero da Cotacao"
+
+  C7_MSG:
+    type: string
+    length: 3
+    description: "Mensagem para Pedido"
+
+  C7_IPIBRUT:
+    type: string
+    length: 1
+    description: "Considera Desconto p/IPI"
+
+  C7_SEQUEN:
+    type: string
+    length: 4
+    description: "Sequencia"
+
+  C7_NUMIMP:
+    type: string
+    length: 20
+    description: "Numero do Purch. Order"
+
+  C7_ORIGEM:
+    type: string
+    length: 8
+    description: "Rotina Geradora"
+
+  C7_QTDACLA:
+    type: number
+    length: 12
+    decimal: 4
+    description: "Qtde a Classificar"
+
+  C7_VALEMB:
+    type: number
+    length: 16
+    decimal: 2
+    description: "Valor da Embalagem"
+
+  C7_FLUXO:
+    type: string
+    length: 1
+    description: "Fluxo de Caixa (S/N)"
+    options: "S=Sim;N=Nao"
+
+  C7_TPOP:
+    type: string
+    length: 1
+    description: "Tipo da Ordem de Produção"
+    options: "F=Firme;P=Prevista"
+
+  C7_GRUPCOM:
+    type: string
+    length: 6
+    description: "Grupo de Compradores"
+
+  C7_STATME:
+    type: string
+    length: 1
+    description: "Status do Mercado Eletr."
+
+  C7_OPER:
+    type: string
+    length: 2
+    description: "Tipo de Operacao"
+
+  C7_OK:
+    type: string
+    length: 2
+    description: "Ok para geracao do ME"
+
+  C7_QTDSOL:
+    type: number
+    length: 12
+    decimal: 2
+    description: "Quantidade pedida da SC"
+
+  C7_VALICM:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do ICMS do item"
+
+  C7_PICM:
+    type: number
+    length: 5
+    decimal: 2
+    description: "Aliquota de ICMS"
+
+  C7_SEGURO:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do Seguro"
+
+  C7_TXMOEDA:
+    type: number
+    length: 11
+    decimal: 4
+    description: "Taxa Moeda"
+
+  C7_VALFRE:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do frete do item"
+
+  C7_MOEDA:
+    type: number
+    length: 2
+    description: "Moeda"
+
+  C7_PENDEN:
+    type: string
+    length: 1
+    description: "Pendente"
+    options: "S=Sim;N=Nao"
+
+  C7_ICMCOMP:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor Icms Complementar"
+
+  C7_SEQMRP:
+    type: string
+    length: 6
+    description: "Seq MRP que originou PC"
+
+  C7_ICMSRET:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do ICMS Solidario"
+
+  C7_PLANILH:
+    type: string
+    length: 6
+    description: "Numero da Planilha"
+
+  C7_MEDICAO:
+    type: string
+    length: 6
+    description: "Numero da Medicao"
+
+  C7_ITEMED:
+    type: string
+    length: 10
+    description: "Item da Medição"
+
+  C7_POLREPR:
+    type: string
+    length: 1
+    description: "Politica de Reprogramacao"
+    options: "N=Manual;S=C/ Periodo Firme;E=S/ Perido Firme;M=Customizada"
+
+  C7_GRADE:
+    type: string
+    length: 1
+    description: "Grade"
+    options: "S=Sim;N=Nao"
+
+  C7_ITEMGRD:
+    type: string
+    length: 3
+    description: "Item da grade"
+
+  C7_TIPOEMP:
+    type: string
+    length: 1
+    description: "Tipo de empenho"
+    options: "1=Dispensada;2=Tomada de Preco;3=Concorrencia;4=Carta Convite;5=Outra"
+
+  C7_PERREPR:
+    type: number
+    length: 3
+    description: "Periodo de Reprogramacao"
+
+  C7_FREPPCC:
+    type: string
+    length: 2
+    description: "Tipo Frete"
+    options: "CC=Collect;PP=Prepaid"
+
+  C7_FORWARD:
+    type: string
+    length: 3
+    description: "Forwarder"
+
+  C7_TIPO_EM:
+    type: string
+    length: 3
+    description: "Via Transp."
+
+  C7_ORIGIMP:
+    type: string
+    length: 3
+    description: "Origem"
+
+  C7_PESO_B:
+    type: number
+    length: 13
+    decimal: 3
+    description: "Peso Bruto"
+
+  C7_INCOTER:
+    type: string
+    length: 3
+    description: "Incoterm"
+
+  C7_IMPORT:
+    type: string
+    length: 3
+    description: "Codigo do Importador"
+
+  C7_LOJAEXP:
+    type: string
+    length: 2
+    description: "Loja do Exportador"
+
+  C7_MT3:
+    type: number
+    length: 8
+    decimal: 2
+    description: "Volume Cubado"
+
+  C7_LOJFABR:
+    type: string
+    length: 2
+    description: "Loja do Fabricante"
+
+  C7_TEC:
+    type: string
+    length: 10
+    description: "Nomenclatura Ext.Mercosul"
+
+  C7_NODIA:
+    type: string
+    length: 10
+    description: " Seq. Diario Contabilidad"
+
+  C7_USERLGI:
+    type: string
+    length: 17
+    description: "Log de Inclusao"
+
+  C7_USERLGA:
+    type: string
+    length: 17
+    description: "Log de Alteracao"
+
+  C7_RESREM:
+    type: string
+    length: 1
+    description: "Eliminado por Remanescent"
+
+  C7_PO_EIC:
+    type: string
+    length: 20
+    description: "Num. PO EIC"
+
+  C7_NUMPR:
+    type: string
+    length: 15
+    description: "Numero Processo"
+
+  C7_RATEIO:
+    type: string
+    length: 1
+    description: "Rateio"
+    options: "1=Sim;2=Nao"
+
+  C7_NUMSA:
+    type: string
+    length: 6
+    description: "Numero da Solic.ao Armaz."
+
+  C7_REVISAO:
+    type: string
+    length: 3
+    description: "Revisão do Produto"
+
+  C7_IDTSS:
+    type: string
+    length: 15
+    description: "ID TSS Totvs Colaboração"
+
+  C7_TPCOLAB:
+    type: string
+    length: 3
+    description: "Tp. Mensagem Colaboracao"
+
+  C7_LOTPLS:
+    type: string
+    length: 10
+    description: "Lote Pls"
+
+  C7_VALCSL:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor CSLL"
+
+  C7_FISCORI:
+    type: string
+    length: 2
+    description: "Filial de Origem"
+
+  C7_RATFIN:
+    type: string
+    length: 1
+    description: "Rateio Financeiro"
+    options: "1=Sim;2=Não"
+
+  C7_TIPCLEG:
+    type: string
+    length: 13
+    description: "Legenda"
+
+  C7_OBSM:
+    type: M
+    length: 50
+    description: "Observacoes do item"
+
+  C7_SOLICIT:
+    type: string
+    length: 30
+    description: "Nome Solicitante"
+
+  C7_VALIMP5:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do Imposto 5"
+
+  C7_VALIMP6:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do Imposto 6"
+
+  C7_ITEMNE:
+    type: string
+    length: 3
+    description: "Item da Nota de Empenho"
+
+  C7_GCPIT:
+    type: string
+    length: 6
+    description: "Item do Edital"
+
+  C7_GCPLT:
+    type: string
+    length: 8
+    description: "Lote do Edital"
+
+  C7_TIPCOM:
+    type: string
+    length: 3
+    description: "Tipo de Compra"
+
+  C7_PLOPELT:
+    type: string
+    length: 4
+    description: "Operadora Lote Pagto"
+
+  C7_OBRIGA:
+    type: M
+    length: 10
+    description: "Obrigações das partes"
+
+  C7_RETENCA:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Retenção"
+
+  C7_QUJEFAT:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Vlr atendido fat direto"
+
+  C7_QUJERET:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Vlr atendida retenção"
+
+  C7_QUJEDED:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Vlr atendida dedução"
+
+  C7_TRANSP:
+    type: string
+    length: 6
+    description: "Código da Transportadora"
+
+  C7_FRETCON:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor Frete Contratado"
+
+  C7_TRANSLJ:
+    type: string
+    length: 2
+    description: "Loja da Transportadora"
+
+  C7_IDTRIB:
+    type: string
+    length: 36
+    description: "ID dos tributos"
+
+  C7_TP:
+    type: string
+    length: 2
+    description: "Tipo Produto"
+
+  C7_VALCOF:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor Cofins"
+
+  C7_JUSTIFI:
+    type: string
+    length: 100
+    description: "Justificativa Cotação"
+
+  C7_OBSFOR:
+    type: M
+    length: 30
+    description: "Observacoes do Fornecedor"
+
+  C7_YUSOIME:
+    type: string
+    length: 1
+    description: "Uso Imediato"
+
+  C7_YOBSCON:
+    type: string
+    length: 200
+    description: "Observacao Continua"
+
+  C7_VLDESC:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do Desconto do item"
+
+  C7_VALIPI:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do IPI do Item"
+
+  C7_VALIR:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor de IRRF do Item"
+
+  C7_WFID:
+    type: string
+    length: 7
+    description: "Id de processo WF"
+
+  C7_YRESPWF:
+    type: string
+    length: 1
+    description: ""
+
+  C7_YOBSWF:
+    type: string
+    length: 40
+    description: "Obs. liberacao WF"
+
+  C7_VALSOL:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do ICMS Solidario"
+
+  C7_VALISS:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do ISS"
+
+  C7_VALINS:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor do Seguro Social"
+
+  C7_VALPIS:
+    type: number
+    length: 14
+    decimal: 2
+    description: "Valor PIS"
+
+  C7_YHORA:
+    type: string
+    length: 8
+    description: "Hora da emissao"
+
+  C7_YTPADTO:
+    type: string
+    length: 1
+    description: "Tipo de pagamento"
+    options: "A=Adiantamento;R=Reembolso"
+
+  C7_YNATADT:
+    type: string
+    length: 10
+    description: "Codigo da Natureza"
+
+  C7_YDPGADT:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Efetiva"
+
+  C7_YSOLADT:
+    type: string
+    length: 1
+    description: "Solicitacao de Adiantamen"
+    options: "1=Sim;2=Nao"
+
+  C7_YUNAME:
+    type: string
+    length: 100
+    description: "Nome do Solicitante"
+
+  C7_YPLACA:
+    type: string
+    length: 8
+    description: "Placa do Veiculo"
+
+  C7_YESPITE:
+    type: string
+    length: 250
+    description: "Especificacao do Item"
+
+  C7_YAPLITE:
+    type: string
+    length: 15
+    description: "NF Servico"
+
+  C7_YNFSERV:
+    type: string
+    length: 15
+    description: "NF Servico"
+
+  C7_YCOTEX:
+    type: string
+    length: 30
+    description: "Cotacao Externa"
+
+required: []

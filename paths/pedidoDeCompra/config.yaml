@@ -1,0 +1,383 @@
+get:
+  tags:
+    - PedidoDeCompra
+  summary: EndPoint para retornar os pedidos de compra
+  operationId: getPedidoDeCompra
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,01
+    - name: "pageNumber"
+      in: query
+      description: Número da página
+      required: false
+      schema:
+        type: number
+    - name: "pageSize"
+      in: query
+      description: Quantidade de itens por página
+      required: false
+      schema:
+        type: number
+    - name: "updatedAt"
+      in: query
+      description: Filtro de atualização (yyyy-mm-dd)
+      required: false
+      schema:
+        type: string
+    - name: "fieldsRet"
+      in: query
+      description: Filtro de campo (C7_NUM,C7_FILIAL,...)
+      required: false
+      schema:
+        type: string
+    - name: "codigo"
+      in: query
+      description: Número do código do pedido de compra
+      required: false
+      schema:
+        type: string
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              data:
+                type: array
+                items:
+                 $ref: "./schemas/SC7.yaml"
+              hasNext:
+                description: Indica se existem mais registros disponíveis na próxima página.
+                type: boolean
+                example: true
+              parameters:
+                type: object
+                description: Define os parâmetros utilizados para consultar registros com base nas datas de atualização.
+                properties:
+                  update_parameter:
+                    type: string
+                    example: DD/MM/YYYY
+                  last_registry_change_sc7:
+                    type: string
+                    example: DD/MM/YYYY
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 400
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 404
+              errorMessage:
+                type: string
+                example: Nenhum registro encontrado.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 500
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+  security:
+    - basicAuth: []
+
+post:
+  tags:
+    - PedidoDeCompra
+  summary: EndPoint para criar um pedido de compra
+  operationId: postPedidoDeCompra
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,01
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "./schemas/SC7v2.yaml"
+
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Pedido de compra incluido com sucesso!
+                  id:
+                    type: number
+                    example: 00001
+                  C5_NUM:
+                    type: string
+                    example: 000001
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 400
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 404
+              errorMessage:
+                type: string
+                example: Nenhum registro encontrado.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 500
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+  security:
+    - basicAuth: []
+
+put:
+  tags:
+    - PedidoDeCompra
+  summary: EndPoint para alterar um Pedido de compra pelo código
+  operationId: UpdatePedidoDeCompra
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: true
+      schema:
+        type: string
+        example: 01,0101
+    - name: "codigo"
+      in: query
+      description: Número do pedido de compra
+      required: true
+      schema:
+        type: string
+        example: "000001"
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "./schemas/SC7v2.yaml"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Pedido de compra alterado com sucesso!
+                  id:
+                    type: number
+                    example: 00001
+                  C5_NUM:
+                    type: string
+                    example: 000001
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 400
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 404
+              errorMessage:
+                type: string
+                example: Nenhum registro encontrado.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 500
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+  security:
+    - basicAuth: []
+
+delete:
+  tags:
+    - PedidoDeCompra
+  summary: EndPoint para deletar uma Pedido de compra pelo código
+  operationId: deletePedidoDeCompraById
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: true
+      schema:
+        type: string
+        example: 01,0101
+    - name: "codigo"
+      in: query
+      description: Número do pedido de compra
+      required: true
+      schema:
+        type: string
+        example: "000001"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Pedido de compra deletado com sucesso!
+                  id:
+                    type: number
+                    example: 00001
+                  C1_NUM:
+                    type: string
+                    example: 000001
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 400
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 404
+              errorMessage:
+                type: string
+                example: Nenhum registro encontrado.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 500
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+  security:
+    - basicAuth: []

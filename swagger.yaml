@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
-  title: API Protheus 
-  description: API Protheus Documentação
+  title: API Coroa | TOTVS Protheus
+  description: Documentação técnica das APIs de integração com o ERP TOTVS Protheus da Coroa.
   version: 1.0.0
   termsOfService: https://coroa.com.br/politica-de-privacidade/
   contact:
@@ -25,10 +25,10 @@ tags:
   - name: CentroDeCusto
   - name: CondicaoDePagamento
   - name: LocaisDeEstoque
-  - name: SolicitacaoDeCompra
   - name: UnidadeDeMedida
   - name: ContaContabil
-  # - name: PedidoDeCompra
+  - name: SolicitacaoDeCompra
+  - name: PedidoDeCompra
 
 security:
   - basicAuth: []
@@ -58,17 +58,17 @@ paths:
   /locaisdeestoque/api/v1/locaisDeEstoque:
     $ref: './paths/locaisDeEstoque/config.yaml'
 
-  /solicitacaocompra/api/v1/solicitacaoDeCompra:
-    $ref: './paths/solicitacaoDeCompra/config.yaml'
-
   /coroaunidademedida/api/v1/unidadeDeMedida:
     $ref: './paths/unidadeDeMedida/config.yaml'
 
   /coroacontacontabil/api/v1/contaContabil:
     $ref: './paths/contaContabil/config.yaml'
 
-  # /pedidodecompra/api/v1/pedidoDeCompra:
-  #   $ref: './paths/pedidoDeCompra/config.yaml'
+  /solicitacaocompra/api/v1/solicitacaoDeCompra:
+    $ref: './paths/solicitacaoDeCompra/config.yaml'
+
+  /pedidodecompra/api/v1/pedidoDeCompra:
+    $ref: './paths/pedidoDeCompra/config.yaml'
   
 components:
   securitySchemes:
@@ -101,14 +101,14 @@ components:
     LocaisDeEstoque:
       $ref: "./paths/locaisDeEstoque/schemas/NNR.yaml"
 
-    SolicitacaoDeCompra:
-      $ref: "./paths/solicitacaoDeCompra/schemas/SC1.yaml"
-
     UnidadeDeMedida:
       $ref: "./paths/unidadeDeMedida/schemas/SAH.yaml"
 
     ContaContabil:
       $ref: "./paths/contaContabil/schemas/CT1.yaml"
 
-    # PedidoDeCompra:
-    #   $ref: "./paths/pedidoDeCompra/schemas/SE4.yaml"
+    SolicitacaoDeCompra:
+      $ref: "./paths/solicitacaoDeCompra/schemas/SC1.yaml"
+
+    PedidoDeCompra:
+      $ref: "./paths/pedidoDeCompra/schemas/SE4.yaml"

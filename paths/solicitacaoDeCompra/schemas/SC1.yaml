@@ -19,8 +19,7 @@ properties:
   C1_APROV:
     type: string
     length: 1
-    description: "Flag de Aprovacäo"        
-                                                                                                                               
+    description: "Flag de Aprovacäo"                                                                                                                                 
 
   C1_CC:
     type: string
@@ -718,7 +717,7 @@ properties:
                                                                                                                                
 
   C1_XCLASSI:
-    type: L
+    type: boolean
     length: 1
     description: "Classificada?"            
                                                                                                                                

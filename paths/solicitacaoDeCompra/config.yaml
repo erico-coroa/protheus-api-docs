@@ -111,3 +111,273 @@ get:
                 example: Descrição do erro.
   security:
     - basicAuth: []
+
+post:
+  tags:
+    - SolicitacaoDeCompra
+  summary: EndPoint para criar uma Solicitacao de compra
+  operationId: postSolicitacaoDeCompra
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,01
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "./schemas/SC1v2.yaml"
+
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Solicitacao de compra incluida com sucesso!
+                  id:
+                    type: number
+                    example: 00001
+                  C5_NUM:
+                    type: string
+                    example: 000001
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 400
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 404
+              errorMessage:
+                type: string
+                example: Nenhum registro encontrado.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 500
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+  security:
+    - basicAuth: []
+
+put:
+  tags:
+    - SolicitacaoDeCompra
+  summary: EndPoint para alterar um Solicitacao de compra pelo código
+  operationId: UpdateSolicitacaoDeCompra
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: true
+      schema:
+        type: string
+        example: 01,0101
+    - name: "codigo"
+      in: query
+      description: Número da solicitação de compra
+      required: true
+      schema:
+        type: string
+        example: "000001"
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "./schemas/SC1v2.yaml"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Solicitacao de compra alterado com sucesso!
+                  id:
+                    type: number
+                    example: 00001
+                  C5_NUM:
+                    type: string
+                    example: 000001
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 400
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 404
+              errorMessage:
+                type: string
+                example: Nenhum registro encontrado.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 500
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+  security:
+    - basicAuth: []
+
+delete:
+  tags:
+    - SolicitacaoDeCompra
+  summary: EndPoint para deletar uma solicitacao de compra pelo código
+  operationId: deleteSolicitacaoDeCompraById
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: true
+      schema:
+        type: string
+        example: 01,0101
+    - name: "codigo"
+      in: query
+      description: Número da solicitação de compra
+      required: true
+      schema:
+        type: string
+        example: "000001"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Solicitacao de compra deletado com sucesso!
+                  id:
+                    type: number
+                    example: 00001
+                  C1_NUM:
+                    type: string
+                    example: 000001
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 400
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 404
+              errorMessage:
+                type: string
+                example: Nenhum registro encontrado.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errorCode:
+                type: integer
+                example: 500
+              errorMessage:
+                type: string
+                example: Descrição do erro.
+  security:
+    - basicAuth: []
