@@ -27,6 +27,7 @@ tags:
   - name: LocaisDeEstoque
   - name: UnidadeDeMedida
   - name: ContaContabil
+  - name: Cliente
   - name: SolicitacaoDeCompra
   - name: PedidoDeCompra
 
@@ -63,6 +64,9 @@ paths:
 
   /coroacontacontabil/api/v1/contaContabil:
     $ref: './paths/contaContabil/config.yaml'
+    
+  /coroacliente/api/v1/cliente:
+    $ref: './paths/cliente/config.yaml'
 
   /solicitacaocompra/api/v1/solicitacaoDeCompra:
     $ref: './paths/solicitacaoDeCompra/config.yaml'
@@ -107,8 +111,11 @@ components:
     ContaContabil:
       $ref: "./paths/contaContabil/schemas/CT1.yaml"
 
+    Cliente:
+      $ref: "./paths/cliente/schemas/SA1.yaml"
+
     SolicitacaoDeCompra:
       $ref: "./paths/solicitacaoDeCompra/schemas/SC1.yaml"
 
     PedidoDeCompra:
-      $ref: "./paths/pedidoDeCompra/schemas/SE4.yaml"
+      $ref: "./paths/pedidoDeCompra/schemas/SC7.yaml"

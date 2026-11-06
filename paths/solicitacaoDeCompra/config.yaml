@@ -31,7 +31,7 @@ get:
         type: string
     - name: "fieldsRet"
       in: query
-      description: Filtro de campo (B1_FILIAL,B1_COD,B5_COD,...)
+      description: Filtro de campo (C1_FILIAL,C1_NUM,...)
       required: false
       schema:
         type: string
@@ -115,7 +115,7 @@ get:
 post:
   tags:
     - SolicitacaoDeCompra
-  summary: EndPoint para criar uma Solicitacao de compra
+  summary: EndPoint para criar uma solicitacao de compra
   operationId: postSolicitacaoDeCompra
   parameters:
     - name: "tenantId"
@@ -155,7 +155,7 @@ post:
                   id:
                     type: number
                     example: 00001
-                  C5_NUM:
+                  C1_NUM:
                     type: string
                     example: 000001
     "400":
@@ -203,7 +203,7 @@ post:
 put:
   tags:
     - SolicitacaoDeCompra
-  summary: EndPoint para alterar um Solicitacao de compra pelo código
+  summary: EndPoint para alterar um solicitacao de compra pelo código
   operationId: UpdateSolicitacaoDeCompra
   parameters:
     - name: "tenantId"
@@ -212,7 +212,7 @@ put:
       required: true
       schema:
         type: string
-        example: 01,0101
+        example: 01,01
     - name: "codigo"
       in: query
       description: Número da solicitação de compra
@@ -249,7 +249,7 @@ put:
                   id:
                     type: number
                     example: 00001
-                  C5_NUM:
+                  C1_NUM:
                     type: string
                     example: 000001
     "400":
@@ -306,7 +306,7 @@ delete:
       required: true
       schema:
         type: string
-        example: 01,0101
+        example: 01,01
     - name: "codigo"
       in: query
       description: Número da solicitação de compra

@@ -155,9 +155,15 @@ post:
                   id:
                     type: number
                     example: 00001
-                  C5_NUM:
+                  C7_NUM:
                     type: string
                     example: 000001
+                  C7_FORNECE:
+                    type: string
+                    example: 000001
+                  C7_LOJA:
+                    type: string
+                    example: 01
     "400":
       description: Invalid input
       content:
@@ -203,7 +209,7 @@ post:
 put:
   tags:
     - PedidoDeCompra
-  summary: EndPoint para alterar um Pedido de compra pelo código
+  summary: EndPoint para alterar um pedido de compra pelo código
   operationId: UpdatePedidoDeCompra
   parameters:
     - name: "tenantId"
@@ -212,7 +218,7 @@ put:
       required: true
       schema:
         type: string
-        example: 01,0101
+        example: 01,01
     - name: "codigo"
       in: query
       description: Número do pedido de compra
@@ -249,9 +255,15 @@ put:
                   id:
                     type: number
                     example: 00001
-                  C5_NUM:
+                  C7_NUM:
                     type: string
                     example: 000001
+                  C7_FORNECE:
+                    type: string
+                    example: 000001
+                  C7_LOJA:
+                    type: string
+                    example: 01
     "400":
       description: Invalid input
       content:
@@ -297,7 +309,7 @@ put:
 delete:
   tags:
     - PedidoDeCompra
-  summary: EndPoint para deletar uma Pedido de compra pelo código
+  summary: EndPoint para deletar uma pedido de compra pelo código
   operationId: deletePedidoDeCompraById
   parameters:
     - name: "tenantId"
@@ -306,7 +318,7 @@ delete:
       required: true
       schema:
         type: string
-        example: 01,0101
+        example: 01,01
     - name: "codigo"
       in: query
       description: Número do pedido de compra
@@ -314,6 +326,13 @@ delete:
       schema:
         type: string
         example: "000001"
+    - name: "item"
+      in: query
+      description: Item do pedido de compra
+      required: false
+      schema:
+        type: string
+        example: "0001"
   responses:
     "200":
       description: Successful response
@@ -337,9 +356,18 @@ delete:
                   id:
                     type: number
                     example: 00001
-                  C1_NUM:
+                  C7_NUM:
                     type: string
                     example: 000001
+                  C7_ITEM:
+                    type: string
+                    example: 0001
+                  C7_FORNECE:
+                    type: string
+                    example: 000001
+                  C7_LOJA:
+                    type: string
+                    example: 01
     "400":
       description: Invalid input
       content:

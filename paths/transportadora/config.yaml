@@ -31,7 +31,7 @@ get:
         type: string
     - name: "fieldsRet"
       in: query
-      description: Filtro de campo (B1_FILIAL,B1_COD,B5_COD,...)
+      description: Filtro de campo (A4_FILIAL,A4_COD,...)
       required: false
       schema:
         type: string

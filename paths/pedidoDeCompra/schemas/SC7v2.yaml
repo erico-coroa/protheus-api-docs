@@ -1211,12 +1211,4 @@ properties:
           description: "Cotacao Externa"
 
       required:
-        [
-          "C1_ITEM",
-          "C1_PRODUTO",
-          "C1_QUANT",
-          "C1_YPRECO",
-          "C1_OBS",
-          "C1_LOCAL",
-          "C1_CC",
-        ]
+        ["C7_PRODUTO", "C7_QUANT", "C7_PRECO", "C7_TOTAL", "C7_OBS", "C7_LOCAL", "C7_CC"]
